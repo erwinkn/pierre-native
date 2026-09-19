@@ -1,6 +1,7 @@
 import assert from "node:assert/strict";
 import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { PNG } from "pngjs";
+import { pixelScale } from "./native-pixels";
 import { createTestRoot } from "@gpuix/react/testing";
 import { PlaygroundApp } from "../src/experiments/diffs/playground/app";
 import { PlaygroundModel } from "../src/experiments/diffs/playground/model";
@@ -185,7 +186,7 @@ for (const { layout, width, mode, suffix } of [
       const path = `${output}/${view}-${layout}${suffix}.png`;
       r.captureScreenshot(path);
       const pixels = PNG.sync.read(readFileSync(path));
-      const scale = pixels.width / width;
+      const scale = pixelScale(pixels, r.getWindowSize());
       const save = box("pg/accept-edit/" + secondId);
       const at =
         (Math.floor((save.y + 4) * scale) * pixels.width +

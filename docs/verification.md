@@ -12,8 +12,9 @@ Local verification passed with GPUiX
 - Archive installation into an independent consumer, including fonts, host parts,
   native rendering, and editing.
 - The full browser interaction suite on WebGPU and WebGL2. The deployed preview
-  also passed both suites with the preceding `af4ee6d` browser artifact. The later
-  change restores a native test-only click-count argument.
+  also passed both suites with the matching `5f5de7b` browser artifact. Its
+  WebAssembly SHA-256 is
+  `751837e5ca06f98682cc1bef60200507dc8aa1c00599df3008d2042e21468e3a`.
 
 The default renderer and JavaScript release pins stay unchanged. The framework
 owner also verified the ordinary GPUI view and optional new bridge separately.

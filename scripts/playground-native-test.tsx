@@ -1,6 +1,7 @@
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import { PNG } from "pngjs";
+import { pixelScale } from "./native-pixels";
 import { formatHex } from "culori";
 import { createTestRoot } from "@gpuix/react/testing";
 import { PlaygroundApp } from "../src/experiments/diffs/playground/app";
@@ -45,7 +46,16 @@ try {
   draw();
   assert(r.getPaintedText().includes("api/users.ts"));
   const first = box("pg/content");
-  assert.equal(first.x, 100);
+  const window = r.getWindowSize();
+  assert(
+    window.width >= 1280,
+    "Desktop viewport reaches the full controls layout",
+  );
+  assert.equal(
+    first.x,
+    (window.width - first.width) / 2,
+    "Content is centered",
+  );
   assert.equal(first.y, box("pg/controls").y + box("pg/controls").height + 24);
   assert(!r.findByTestId("pg/header"));
   assert.equal(first.width, 1240);
@@ -71,15 +81,17 @@ try {
   const hoverPixels = PNG.sync.read(
     readFileSync("docs/evidence/playground/native-hover-fixed.png"),
   );
+  const scale = pixelScale(clearPixels, window);
+  assert.equal(pixelScale(hoverPixels, window), scale);
   for (
-    let y = Math.floor(hoverViewport.y * 2);
-    y < (hoverViewport.y + hoverViewport.height) * 2;
+    let y = Math.floor(hoverViewport.y * scale);
+    y < (hoverViewport.y + hoverViewport.height) * scale;
     y++
   ) {
     const from =
-      (y * clearPixels.width + Math.ceil((hoverViewport.x + 22) * 2)) * 4;
+      (y * clearPixels.width + Math.ceil((hoverViewport.x + 22) * scale)) * 4;
     const to =
-      (y * clearPixels.width + Math.floor((hoverViewport.x + 600) * 2)) * 4;
+      (y * clearPixels.width + Math.floor((hoverViewport.x + 600) * scale)) * 4;
     assert.deepEqual(
       hoverPixels.data.subarray(from, to),
       clearPixels.data.subarray(from, to),
@@ -115,8 +127,8 @@ try {
       );
       const viewport = box("pg/file/viewport");
       const at =
-        (Math.floor((viewport.y + 6) * 2) * pixels.width +
-          Math.floor((viewport.x + viewport.width - 30) * 2)) *
+        (Math.floor((viewport.y + 6) * scale) * pixels.width +
+          Math.floor((viewport.x + viewport.width - 30) * scale)) *
         4;
       const rgb = formatHex(codeThemes[name].background)!
         .slice(1)
@@ -176,8 +188,8 @@ try {
     readFileSync("docs/evidence/playground/native-hover.png"),
   );
   const at =
-    (Math.floor((box("pg/add-comment").y + 5) * 2) * b.width +
-      Math.floor((vp.x + 600) * 2)) *
+    (Math.floor((box("pg/add-comment").y + 5) * scale) * b.width +
+      Math.floor((vp.x + 600) * scale)) *
     4;
   assert.notDeepEqual(
     [...a.data.slice(at, at + 3)],
@@ -237,7 +249,9 @@ try {
   );
   const noteBounds = box("pg/comment/0");
   const fillAt =
-    (Math.floor((noteBounds.y + 20) * 2) * splitImage.width + 400) * 4;
+    (Math.floor((noteBounds.y + 20) * scale) * splitImage.width +
+      Math.floor(200 * scale)) *
+    4;
   assert.deepEqual(
     [...splitImage.data.slice(fillAt, fillAt + 3)],
     [
@@ -265,7 +279,10 @@ try {
     for (let at = 0; at < labels.data.length; at += 4)
       if (rgb.every((value, c) => Math.abs(labels.data[at + c] - value) < 3))
         pixels++;
-    assert(pixels > 1000, "Remote cursor badge paints beyond its code row");
+    assert(
+      pixels / (scale * scale) > 250,
+      "Remote cursor badge paints more than 250 square logical points",
+    );
   }
 
   vp = box("pg/peer/0/viewport");

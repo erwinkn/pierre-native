@@ -34,3 +34,11 @@ public exports, host parts, and native editor.
 I stand behind these implementation choices. Publication is complete only after
 the full editor tests pass and the deployed site has been checked. Framework
 fixture results alone do not establish that result.
+
+The first clean CI build exposed display assumptions in the playground tests.
+The runner uses 1x pixels and can constrain a requested 1440-point window to
+1280 points. Pixel checks now use the measured screenshot-to-viewport scale.
+The centering check uses actual window bounds and still requires the 1240-point
+content width. No color, hover, or interaction assertion was removed. CI saves
+successfully compiled runtimes before interaction tests, so a test failure does
+not discard that build cache.

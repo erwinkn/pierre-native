@@ -1,6 +1,7 @@
 import assert from "node:assert/strict";
 import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { PNG } from "pngjs";
+import { pixelScale } from "./native-pixels";
 import { createTestRoot } from "@gpuix/react/testing";
 import { PlaygroundApp } from "../src/experiments/diffs/playground/app";
 import {
@@ -201,9 +202,10 @@ try {
         .includes(marker.source + ": " + marker.message),
     );
     const pixels = capture("marker-" + marker.severity);
+    const scale = pixelScale(pixels, r.getWindowSize());
     const at =
-      (Math.floor((popup.y + 5) * 2) * pixels.width +
-        Math.floor((popup.x + 15) * 2)) *
+      (Math.floor((popup.y + 5) * scale) * pixels.width +
+        Math.floor((popup.x + 15) * scale)) *
       4;
     // Computed colors from the pinned Pierre playground, independent of our theme resolver.
     const expected = {
@@ -232,14 +234,15 @@ try {
     model.update({ diffStyle: layout });
     draw();
     const pixels = capture("diff-classic-" + layout);
+    const scale = pixelScale(pixels, r.getWindowSize());
     const b = box("pg/diff/viewport");
     const paneX = layout === "split" ? b.x + (b.width + 1) / 2 : b.x;
     // Find an added row by the green sign, then check a clear interval before it.
     const signX = paneX + gutter + 16 - 12;
     let rows = 0;
-    for (let y = Math.ceil(b.y * 2); y < (b.y + b.height) * 2; y++) {
+    for (let y = Math.ceil(b.y * scale); y < (b.y + b.height) * scale; y++) {
       const colored = (x: number) => {
-        const at = (y * pixels.width + Math.floor(x * 2)) * 4;
+        const at = (y * pixels.width + Math.floor(x * scale)) * 4;
         return (
           pixels.data[at + 1] > 120 &&
           pixels.data[at] < 80 &&
