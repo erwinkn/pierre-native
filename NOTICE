@@ -18,6 +18,7 @@ Their licenses and the GPUiX third-party notices are in vendor/licenses.
 
 The Pierre theme includes work from Primer's MIT-licensed GitHub VS Code theme.
 Its full notice is in vendor/licenses/diffs/@pierre__theme__NOTICE.md.
+React uses the MIT license in vendor/licenses/LICENSE-React.
 Other JavaScript dependency notices are in vendor/licenses/diffs.
 
 Inter, JetBrains Mono, and Geist fonts use the SIL Open Font License 1.1.
