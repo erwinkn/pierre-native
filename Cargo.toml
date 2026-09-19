@@ -1,0 +1,15 @@
+[workspace]
+members = ["crates/pierre-view", "crates/pierre-runtime", "crates/pierre-react"]
+default-members = ["crates/pierre-runtime"]
+resolver = "2"
+
+[workspace.dependencies]
+gpuix-native = { git = "https://github.com/erwinkn/gpuix", rev = "5f5de7b61a57a44b4e13466068d5cc056de3a9a2", default-features = false }
+gpui = { git = "https://github.com/erwinkn/gpuix", rev = "5f5de7b61a57a44b4e13466068d5cc056de3a9a2", default-features = false, features = ["font-kit"] }
+gpui_macos = { git = "https://github.com/erwinkn/gpuix", rev = "5f5de7b61a57a44b4e13466068d5cc056de3a9a2", default-features = false, features = ["font-kit"] }
+gpui-react = { git = "https://github.com/erwinkn/gpuix", rev = "5f5de7b61a57a44b4e13466068d5cc056de3a9a2", default-features = false }
+gpui-react-controls = { git = "https://github.com/erwinkn/gpuix", rev = "5f5de7b61a57a44b4e13466068d5cc056de3a9a2", default-features = false }
+gpui-react-host = { git = "https://github.com/erwinkn/gpuix", rev = "5f5de7b61a57a44b4e13466068d5cc056de3a9a2", default-features = false }
+
+[profile.release]
+lto = true

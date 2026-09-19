@@ -1,0 +1,30 @@
+Pierre Native
+Copyright 2026 Pierre Native contributors
+
+This project is an independent GPUIX port of Pierre Diffs. It is not an
+official product of The Pierre Computer Company.
+
+Pierre source, editor algorithms, themes, samples, and playground data derive
+from https://github.com/pierrecomputer/pierre at commit
+c5b1e58203fa5c59dd99353cbcac09ee653a24f6, package @pierre/diffs 1.4.3.
+The original Apache-2.0 license is in vendor/pierre/LICENSE.md. The manifests
+in vendor/pierre and vendor/pierre-playground record source hashes and changes.
+The native controller adapts Pierre's editor commands. GPUI painting, input,
+text geometry, and the React controls replace the browser renderer.
+
+The GPUiX runtime and GPUI are separate dependencies under Apache-2.0.
+See https://github.com/erwinkn/gpuix and https://github.com/erwinkn/zed.
+Their licenses and the GPUiX third-party notices are in vendor/licenses.
+
+The Pierre theme includes work from Primer's MIT-licensed GitHub VS Code theme.
+Its full notice is in vendor/licenses/diffs/@pierre__theme__NOTICE.md.
+Other JavaScript dependency notices are in vendor/licenses/diffs.
+
+Inter, JetBrains Mono, and Geist fonts use the SIL Open Font License 1.1.
+See assets/fonts/Inter-OFL.txt, assets/fonts/JetBrainsMono-OFL.txt, and
+assets/playground/OFL-Geist.txt. File icons use the license in
+assets/playground/LICENSE-icons. Lucide icons use the ISC license distributed
+with lucide-static.
+
+The surrounding UI theme adapts Beautiful UI by Shane Levine, under MIT.
+See vendor/licenses/Beautiful-UI.md.

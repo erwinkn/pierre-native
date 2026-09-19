@@ -1,0 +1,24 @@
+{
+  "icons": {
+    "package": "@pierre/icons",
+    "version": "0.9.0",
+    "license": "Apache-2.0"
+  },
+  "font": {
+    "package": "geist",
+    "version": "1.7.2",
+    "license": "OFL-1.1"
+  },
+  "avatars": "pierrecomputer/pierre@c5b1e58203fa5c59dd99353cbcac09ee653a24f6/apps/docs/public/avatars",
+  "files": {
+    "OFL-Geist.txt": "930853ee1daa68554d9e35c8a9175affb74f699fad9a5da6ee5ebe76379d9137",
+    "Geist-Regular.ttf": "5c8968eafb98a4c4f47033daf29e38e284a6f2a82eb017d171ab040fe7c4b615",
+    "icons.json": "9bb8dba03db2439dbc57a71f15c9f71edfa42f94a58ffa6d24348c67a398318d",
+    "Geist-Bold.ttf": "e866b423b755233cae8bce6a37519f6fe630be9772fa08fc3114bff15bc8580f",
+    "avatar_fat.jpg": "a2859dc19c330aa5b479f78c3f303efe5684dc047939d0b6044a98e0fe071a9d",
+    "LICENSE-icons": "676ff202ce0e9471ddea192ffc2039525375430bb2d04c9f9055dd102f7cf1dc",
+    "avatar_mdo.jpg": "d8a1416bca4043704042a77b187cde5bcd14d03c82c06f847059e49495e012c4",
+    "Geist-Medium.ttf": "0090e004725f6f64b841715b4167920580f883fcf9b67fc6d744089103fec101",
+    "Geist-SemiBold.ttf": "612ec98df33935354f39e81e54101656961ab6e5549f64b63eb57868ba7bab8d"
+  }
+}

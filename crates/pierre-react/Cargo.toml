@@ -1,0 +1,24 @@
+[package]
+name = "pierre-react-runtime"
+version = "0.1.0"
+edition = "2024"
+license = "Apache-2.0"
+publish = false
+description = "Opt-in asynchronous React composition for the shared Pierre viewport"
+
+[lib]
+crate-type = ["cdylib"]
+
+[features]
+frame-probe = ["dep:anyhow"]
+
+[dependencies]
+anyhow = { version = "1", optional = true }
+pierre-native-view = { path = "../pierre-view", features = ["react"] }
+gpui-react-host.workspace = true
+gpui-react-controls.workspace = true
+napi = { version = "3", features = ["napi8"] }
+napi-derive = "3"
+
+[build-dependencies]
+napi-build = "2"

@@ -1,0 +1,2045 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`parsePatchFiles should parse diff.patch and match its digest snapshot: git pr patch digest 1`] = `
+[
+  {
+    "files": [
+      {
+        "hunks": [
+          "a43@2 d43@2 split:48 unified:64 collapsedBefore:1",
+        ],
+        "name": "packages/diffs/src/components/File.ts",
+        "prevName": "packages/diffs/src/File.ts",
+        "totals": "split:49 unified:65 additionLines:43 deletionLines:43",
+        "type": "rename-changed",
+      },
+      {
+        "hunks": [
+          "a30@2 d28@2 split:32 unified:41 collapsedBefore:1",
+          "a18@36 d17@34 split:18 unified:29 collapsedBefore:4",
+        ],
+        "name": "packages/diffs/src/components/FileDiff.ts",
+        "prevName": "packages/diffs/src/FileDiff.ts",
+        "totals": "split:55 unified:75 additionLines:48 deletionLines:45",
+        "type": "rename-changed",
+      },
+      {
+        "hunks": [
+          "a21@1 d21@1 split:21 unified:33 collapsedBefore:0",
+        ],
+        "name": "packages/diffs/src/components/FileStream.ts",
+        "prevName": "packages/diffs/src/FileStream.ts",
+        "totals": "split:21 unified:33 additionLines:21 deletionLines:21",
+        "type": "rename-changed",
+      },
+      {
+        "hunks": [],
+        "name": "packages/diffs/src/components/web-components.ts",
+        "prevName": "packages/diffs/src/custom-components/Container.ts",
+        "totals": "split:0 unified:0 additionLines:0 deletionLines:0",
+        "type": "rename-pure",
+      },
+      {
+        "hunks": [
+          "a17@1 d17@1 split:24 unified:27 collapsedBefore:0",
+          "a8@28 d6@28 split:8 unified:8 collapsedBefore:10",
+          "a7@44 d6@42 split:7 unified:7 collapsedBefore:8",
+        ],
+        "name": "packages/diffs/src/index.ts",
+        "prevName": undefined,
+        "totals": "split:57 unified:60 additionLines:32 deletionLines:29",
+        "type": "change",
+      },
+      {
+        "hunks": [
+          "a6@1 d6@1 split:6 unified:7 collapsedBefore:0",
+        ],
+        "name": "packages/diffs/src/managers/LineSelectionManager.ts",
+        "prevName": "packages/diffs/src/LineSelectionManager.ts",
+        "totals": "split:6 unified:7 additionLines:6 deletionLines:6",
+        "type": "rename-changed",
+      },
+      {
+        "hunks": [
+          "a7@3 d7@3 split:7 unified:8 collapsedBefore:2",
+        ],
+        "name": "packages/diffs/src/managers/MouseEventManager.ts",
+        "prevName": "packages/diffs/src/MouseEventManager.ts",
+        "totals": "split:9 unified:10 additionLines:7 deletionLines:7",
+        "type": "rename-changed",
+      },
+      {
+        "hunks": [
+          "a4@1 d4@1 split:4 unified:5 collapsedBefore:0",
+        ],
+        "name": "packages/diffs/src/managers/ResizeManager.ts",
+        "prevName": "packages/diffs/src/ResizeManager.ts",
+        "totals": "split:4 unified:5 additionLines:4 deletionLines:4",
+        "type": "rename-changed",
+      },
+      {
+        "hunks": [],
+        "name": "packages/diffs/src/managers/ScrollSyncManager.ts",
+        "prevName": "packages/diffs/src/ScrollSyncManager.ts",
+        "totals": "split:0 unified:0 additionLines:0 deletionLines:0",
+        "type": "rename-pure",
+      },
+      {
+        "hunks": [],
+        "name": "packages/diffs/src/managers/UniversalRenderingManager.ts",
+        "prevName": "packages/diffs/src/UniversalRenderer.ts",
+        "totals": "split:0 unified:0 additionLines:0 deletionLines:0",
+        "type": "rename-pure",
+      },
+      {
+        "hunks": [
+          "a6@1 d6@1 split:6 unified:7 collapsedBefore:0",
+        ],
+        "name": "packages/diffs/src/react/File.tsx",
+        "prevName": undefined,
+        "totals": "split:6 unified:7 additionLines:6 deletionLines:6",
+        "type": "change",
+      },
+      {
+        "hunks": [
+          "a9@1 d9@1 split:9 unified:13 collapsedBefore:0",
+        ],
+        "name": "packages/diffs/src/react/types.ts",
+        "prevName": undefined,
+        "totals": "split:9 unified:13 additionLines:9 deletionLines:9",
+        "type": "change",
+      },
+      {
+        "hunks": [
+          "a7@1 d7@1 split:8 unified:8 collapsedBefore:0",
+        ],
+        "name": "packages/diffs/src/react/utils/renderDiffChildren.tsx",
+        "prevName": undefined,
+        "totals": "split:8 unified:8 additionLines:7 deletionLines:7",
+        "type": "change",
+      },
+      {
+        "hunks": [
+          "a7@1 d7@1 split:8 unified:8 collapsedBefore:0",
+        ],
+        "name": "packages/diffs/src/react/utils/renderFileChildren.tsx",
+        "prevName": undefined,
+        "totals": "split:8 unified:8 additionLines:7 deletionLines:7",
+        "type": "change",
+      },
+      {
+        "hunks": [
+          "a9@7 d9@7 split:9 unified:12 collapsedBefore:6",
+        ],
+        "name": "packages/diffs/src/react/utils/useFileDiffInstance.ts",
+        "prevName": undefined,
+        "totals": "split:15 unified:18 additionLines:9 deletionLines:9",
+        "type": "change",
+      },
+      {
+        "hunks": [
+          "a9@7 d9@7 split:9 unified:12 collapsedBefore:6",
+        ],
+        "name": "packages/diffs/src/react/utils/useFileInstance.ts",
+        "prevName": undefined,
+        "totals": "split:15 unified:18 additionLines:9 deletionLines:9",
+        "type": "change",
+      },
+      {
+        "hunks": [
+          "a13@2 d13@2 split:13 unified:17 collapsedBefore:1",
+          "a22@27 d22@27 split:22 unified:38 collapsedBefore:12",
+        ],
+        "name": "packages/diffs/src/renderers/DiffHunksRenderer.ts",
+        "prevName": "packages/diffs/src/DiffHunksRenderer.ts",
+        "totals": "split:48 unified:68 additionLines:35 deletionLines:35",
+        "type": "rename-changed",
+      },
+      {
+        "hunks": [
+          "a13@2 d13@2 split:13 unified:17 collapsedBefore:1",
+          "a18@20 d18@20 split:18 unified:30 collapsedBefore:5",
+        ],
+        "name": "packages/diffs/src/renderers/FileRenderer.ts",
+        "prevName": "packages/diffs/src/FileRenderer.ts",
+        "totals": "split:37 unified:53 additionLines:31 deletionLines:31",
+        "type": "rename-changed",
+      },
+      {
+        "hunks": [
+          "a5@1 d5@1 split:5 unified:7 collapsedBefore:0",
+        ],
+        "name": "packages/diffs/src/ssr/preloadDiffs.ts",
+        "prevName": undefined,
+        "totals": "split:5 unified:7 additionLines:5 deletionLines:5",
+        "type": "change",
+      },
+      {
+        "hunks": [
+          "a5@1 d5@1 split:5 unified:7 collapsedBefore:0",
+        ],
+        "name": "packages/diffs/src/ssr/preloadFile.ts",
+        "prevName": undefined,
+        "totals": "split:5 unified:7 additionLines:5 deletionLines:5",
+        "type": "change",
+      },
+      {
+        "hunks": [
+          "a4@1 d4@1 split:4 unified:5 collapsedBefore:0",
+        ],
+        "name": "packages/diffs/src/ssr/preloadPatchFile.ts",
+        "prevName": undefined,
+        "totals": "split:4 unified:5 additionLines:4 deletionLines:4",
+        "type": "change",
+      },
+      {
+        "hunks": [
+          "a7@1 d7@1 split:7 unified:8 collapsedBefore:0",
+        ],
+        "name": "packages/diffs/test/FileRenderer.ast.test.ts",
+        "prevName": undefined,
+        "totals": "split:7 unified:8 additionLines:7 deletionLines:7",
+        "type": "change",
+      },
+      {
+        "hunks": [
+          "a6@1 d6@1 split:6 unified:7 collapsedBefore:0",
+        ],
+        "name": "packages/diffs/test/FileRenderer.test.ts",
+        "prevName": undefined,
+        "totals": "split:6 unified:7 additionLines:6 deletionLines:6",
+        "type": "change",
+      },
+    ],
+    "patchIndex": 0,
+  },
+  {
+    "files": [
+      {
+        "hunks": [
+          "a7@1 d6@1 split:7 unified:7 collapsedBefore:0",
+          "a7@259 d7@258 split:7 unified:8 collapsedBefore:251",
+          "a7@509 d7@508 split:7 unified:8 collapsedBefore:243",
+        ],
+        "name": "apps/demo/src/main.ts",
+        "prevName": undefined,
+        "totals": "split:515 unified:517 additionLines:21 deletionLines:20",
+        "type": "change",
+      },
+      {
+        "hunks": [
+          "a7@187 d7@187 split:7 unified:8 collapsedBefore:186",
+        ],
+        "name": "apps/demo/src/style.css",
+        "prevName": undefined,
+        "totals": "split:193 unified:194 additionLines:7 deletionLines:7",
+        "type": "change",
+      },
+      {
+        "hunks": [
+          "a7@52 d7@52 split:7 unified:8 collapsedBefore:51",
+          "a12@132 d10@132 split:12 unified:13 collapsedBefore:73",
+          "a7@261 d7@259 split:7 unified:8 collapsedBefore:117",
+        ],
+        "name": "apps/solid-diff-demo/README.md",
+        "prevName": undefined,
+        "totals": "split:267 unified:270 additionLines:26 deletionLines:24",
+        "type": "change",
+      },
+      {
+        "hunks": [
+          "a7@1 d7@1 split:7 unified:9 collapsedBefore:0",
+          "a8@91 d7@91 split:8 unified:9 collapsedBefore:83",
+          "a7@118 d7@117 split:7 unified:8 collapsedBefore:19",
+        ],
+        "name": "apps/solid-diff-demo/src/components/FileDiffSSR.tsx",
+        "prevName": undefined,
+        "totals": "split:124 unified:128 additionLines:22 deletionLines:21",
+        "type": "change",
+      },
+      {
+        "hunks": [
+          "a5@1 d3@1 split:5 unified:5 collapsedBefore:0",
+          "a7@8 d7@6 split:7 unified:8 collapsedBefore:2",
+        ],
+        "name": "apps/solid-diff-demo/src/custom-elements.d.ts",
+        "prevName": undefined,
+        "totals": "split:14 unified:15 additionLines:12 deletionLines:10",
+        "type": "change",
+      },
+      {
+        "hunks": [
+          "a7@4 d6@4 split:7 unified:7 collapsedBefore:3",
+          "a7@443 d7@442 split:7 unified:8 collapsedBefore:432",
+        ],
+        "name": "packages/diffs/src/components/File.ts",
+        "prevName": undefined,
+        "totals": "split:449 unified:450 additionLines:14 deletionLines:13",
+        "type": "change",
+      },
+      {
+        "hunks": [
+          "a7@4 d6@4 split:7 unified:7 collapsedBefore:3",
+          "a7@509 d7@508 split:7 unified:8 collapsedBefore:498",
+        ],
+        "name": "packages/diffs/src/components/FileDiff.ts",
+        "prevName": undefined,
+        "totals": "split:515 unified:516 additionLines:14 deletionLines:13",
+        "type": "change",
+      },
+      {
+        "hunks": [
+          "a4@1 d4@1 split:4 unified:5 collapsedBefore:0",
+          "a8@245 d7@245 split:8 unified:9 collapsedBefore:240",
+        ],
+        "name": "packages/diffs/src/components/FileStream.ts",
+        "prevName": undefined,
+        "totals": "split:252 unified:254 additionLines:12 deletionLines:11",
+        "type": "change",
+      },
+      {
+        "hunks": [
+          "a11@1 d10@1 split:11 unified:12 collapsedBefore:0",
+          "a7@33 d7@32 split:7 unified:8 collapsedBefore:21",
+        ],
+        "name": "packages/diffs/src/components/web-components.ts",
+        "prevName": undefined,
+        "totals": "split:39 unified:41 additionLines:18 deletionLines:17",
+        "type": "change",
+      },
+      {
+        "hunks": [
+          "a7@1 d5@1 split:7 unified:7 collapsedBefore:0",
+        ],
+        "name": "packages/diffs/src/constants.ts",
+        "prevName": undefined,
+        "totals": "split:7 unified:7 additionLines:7 deletionLines:5",
+        "type": "change",
+      },
+      {
+        "hunks": [
+          "a7@1 d6@1 split:7 unified:7 collapsedBefore:0",
+          "a8@37 d8@36 split:8 unified:10 collapsedBefore:29",
+        ],
+        "name": "packages/diffs/src/react/File.tsx",
+        "prevName": undefined,
+        "totals": "split:44 unified:46 additionLines:15 deletionLines:14",
+        "type": "change",
+      },
+      {
+        "hunks": [
+          "a6@1 d5@1 split:6 unified:6 collapsedBefore:0",
+          "a8@42 d8@41 split:8 unified:10 collapsedBefore:35",
+        ],
+        "name": "packages/diffs/src/react/FileDiff.tsx",
+        "prevName": undefined,
+        "totals": "split:49 unified:51 additionLines:14 deletionLines:13",
+        "type": "change",
+      },
+      {
+        "hunks": [
+          "a6@1 d5@1 split:6 unified:6 collapsedBefore:0",
+          "a8@46 d8@45 split:8 unified:10 collapsedBefore:39",
+        ],
+        "name": "packages/diffs/src/react/MultiFileDiff.tsx",
+        "prevName": undefined,
+        "totals": "split:53 unified:55 additionLines:14 deletionLines:13",
+        "type": "change",
+      },
+      {
+        "hunks": [
+          "a7@2 d6@2 split:7 unified:7 collapsedBefore:1",
+          "a9@44 d9@43 split:9 unified:11 collapsedBefore:35",
+        ],
+        "name": "packages/diffs/src/react/PatchDiff.tsx",
+        "prevName": undefined,
+        "totals": "split:52 unified:54 additionLines:16 deletionLines:15",
+        "type": "change",
+      },
+      {
+        "hunks": [
+          "a11@1 d9@1 split:11 unified:12 collapsedBefore:0",
+        ],
+        "name": "packages/diffs/src/react/jsx.d.ts",
+        "prevName": undefined,
+        "totals": "split:11 unified:12 additionLines:11 deletionLines:9",
+        "type": "change",
+      },
+      {
+        "hunks": [
+          "a0@0 d13@1 split:13 unified:13 collapsedBefore:0",
+        ],
+        "name": "packages/diffs/src/ssr/FileDiffElement.ts",
+        "prevName": undefined,
+        "totals": "split:13 unified:13 additionLines:0 deletionLines:13",
+        "type": "deleted",
+      },
+      {
+        "hunks": [
+          "a7@4 d6@4 split:7 unified:7 collapsedBefore:3",
+          "a7@36 d7@35 split:7 unified:8 collapsedBefore:25",
+          "a7@72 d7@71 split:7 unified:8 collapsedBefore:29",
+          "a7@84 d7@83 split:7 unified:8 collapsedBefore:5",
+        ],
+        "name": "packages/diffs/src/ssr/FileDiffReact.tsx",
+        "prevName": undefined,
+        "totals": "split:90 unified:93 additionLines:28 deletionLines:27",
+        "type": "change",
+      },
+      {
+        "hunks": [
+          "a4@1 d6@1 split:6 unified:6 collapsedBefore:0",
+        ],
+        "name": "packages/diffs/src/ssr/index.ts",
+        "prevName": undefined,
+        "totals": "split:6 unified:6 additionLines:4 deletionLines:6",
+        "type": "change",
+      },
+    ],
+    "patchIndex": 1,
+  },
+  {
+    "files": [
+      {
+        "hunks": [
+          "a7@13 d6@13 split:7 unified:7 collapsedBefore:12",
+        ],
+        "name": "packages/diffs/src/index.ts",
+        "prevName": undefined,
+        "totals": "split:19 unified:19 additionLines:7 deletionLines:6",
+        "type": "change",
+      },
+    ],
+    "patchIndex": 2,
+  },
+  {
+    "files": [
+      {
+        "hunks": [
+          "a8@186 d8@186 split:8 unified:10 collapsedBefore:185",
+          "a7@227 d7@227 split:7 unified:8 collapsedBefore:33",
+          "a8@237 d8@237 split:8 unified:10 collapsedBefore:3",
+        ],
+        "name": "apps/demo/src/main.ts",
+        "prevName": undefined,
+        "totals": "split:244 unified:249 additionLines:23 deletionLines:23",
+        "type": "change",
+      },
+      {
+        "hunks": [
+          "a18@1 d18@1 split:18 unified:22 collapsedBefore:0",
+          "a7@208 d7@208 split:7 unified:8 collapsedBefore:189",
+        ],
+        "name": "apps/demo/src/style.css",
+        "prevName": undefined,
+        "totals": "split:214 unified:219 additionLines:25 deletionLines:25",
+        "type": "change",
+      },
+      {
+        "hunks": [
+          "a10@162 d10@162 split:10 unified:14 collapsedBefore:161",
+        ],
+        "name": "apps/docs/app/diff-examples/FontStyles/FontStyles.tsx",
+        "prevName": undefined,
+        "totals": "split:171 unified:175 additionLines:10 deletionLines:10",
+        "type": "change",
+      },
+      {
+        "hunks": [
+          "a7@9 d7@9 split:7 unified:8 collapsedBefore:8",
+        ],
+        "name": "apps/docs/app/docs/ReactAPI/ReactAPI.tsx",
+        "prevName": undefined,
+        "totals": "split:15 unified:16 additionLines:7 deletionLines:7",
+        "type": "change",
+      },
+      {
+        "hunks": [
+          "a44@13 d44@13 split:44 unified:61 collapsedBefore:12",
+          "a8@61 d8@61 split:8 unified:10 collapsedBefore:4",
+          "a15@77 d15@77 split:15 unified:18 collapsedBefore:8",
+          "a15@94 d15@94 split:15 unified:18 collapsedBefore:2",
+        ],
+        "name": "apps/docs/app/docs/Styling/constants.ts",
+        "prevName": undefined,
+        "totals": "split:108 unified:133 additionLines:82 deletionLines:82",
+        "type": "change",
+      },
+      {
+        "hunks": [
+          "a14@457 d14@457 split:14 unified:17 collapsedBefore:456",
+          "a7@479 d7@479 split:7 unified:8 collapsedBefore:8",
+          "a8@494 d8@494 split:8 unified:10 collapsedBefore:8",
+        ],
+        "name": "apps/docs/app/docs/VanillaAPI/constants.ts",
+        "prevName": undefined,
+        "totals": "split:501 unified:507 additionLines:29 deletionLines:29",
+        "type": "change",
+      },
+      {
+        "hunks": [
+          "a7@272 d7@272 split:7 unified:8 collapsedBefore:271",
+        ],
+        "name": "apps/docs/app/docs/WorkerPool/WorkerPool.tsx",
+        "prevName": undefined,
+        "totals": "split:278 unified:279 additionLines:7 deletionLines:7",
+        "type": "change",
+      },
+      {
+        "hunks": [
+          "a7@117 d7@117 split:7 unified:8 collapsedBefore:116",
+          "a7@133 d7@133 split:7 unified:8 collapsedBefore:9",
+        ],
+        "name": "apps/docs/app/globals.css",
+        "prevName": undefined,
+        "totals": "split:139 unified:141 additionLines:14 deletionLines:14",
+        "type": "change",
+      },
+      {
+        "hunks": [
+          "a6@6 d7@6 split:7 unified:7 collapsedBefore:5",
+          "a11@33 d11@34 split:11 unified:13 collapsedBefore:21",
+          "a7@49 d7@50 split:7 unified:8 collapsedBefore:5",
+          "a19@60 d17@61 split:19 unified:30 collapsedBefore:4",
+        ],
+        "name": "apps/docs/app/ssr/SSR_Page.tsx",
+        "prevName": "apps/docs/app/ssr/SsrPage.tsx",
+        "totals": "split:79 unified:93 additionLines:43 deletionLines:42",
+        "type": "rename-changed",
+      },
+      {
+        "hunks": [
+          "a7@4 d7@4 split:7 unified:8 collapsedBefore:3",
+          "a5@68 d5@68 split:5 unified:6 collapsedBefore:57",
+        ],
+        "name": "apps/docs/app/ssr/page.tsx",
+        "prevName": undefined,
+        "totals": "split:72 unified:74 additionLines:12 deletionLines:12",
+        "type": "change",
+      },
+      {
+        "hunks": [
+          "a7@228 d7@228 split:7 unified:8 collapsedBefore:227",
+        ],
+        "name": "packages/diffs/src/components/File.ts",
+        "prevName": undefined,
+        "totals": "split:234 unified:235 additionLines:7 deletionLines:7",
+        "type": "change",
+      },
+      {
+        "hunks": [
+          "a7@276 d7@276 split:7 unified:8 collapsedBefore:275",
+        ],
+        "name": "packages/diffs/src/components/FileDiff.ts",
+        "prevName": undefined,
+        "totals": "split:282 unified:283 additionLines:7 deletionLines:7",
+        "type": "change",
+      },
+      {
+        "hunks": [
+          "a7@29 d7@29 split:7 unified:8 collapsedBefore:28",
+        ],
+        "name": "packages/diffs/src/components/web-components.ts",
+        "prevName": undefined,
+        "totals": "split:35 unified:36 additionLines:7 deletionLines:7",
+        "type": "change",
+      },
+      {
+        "hunks": [
+          "a11@156 d11@156 split:11 unified:13 collapsedBefore:155",
+          "a11@169 d11@169 split:11 unified:13 collapsedBefore:2",
+          "a14@181 d14@181 split:14 unified:16 collapsedBefore:1",
+        ],
+        "name": "packages/diffs/src/managers/ResizeManager.ts",
+        "prevName": undefined,
+        "totals": "split:194 unified:200 additionLines:36 deletionLines:36",
+        "type": "change",
+      },
+      {
+        "hunks": [
+          "a68@1 d68@1 split:68 unified:100 collapsedBefore:0",
+        ],
+        "name": "packages/diffs/src/sprite.ts",
+        "prevName": undefined,
+        "totals": "split:68 unified:100 additionLines:68 deletionLines:68",
+        "type": "change",
+      },
+      {
+        "hunks": [
+          "a66@2 d63@2 split:66 unified:103 collapsedBefore:1",
+          "a7@73 d7@70 split:7 unified:8 collapsedBefore:5",
+          "a12@88 d9@85 split:12 unified:14 collapsedBefore:8",
+          "a87@107 d87@101 split:87 unified:129 collapsedBefore:7",
+          "a143@195 d143@189 split:143 unified:213 collapsedBefore:1",
+          "a16@344 d15@338 split:16 unified:22 collapsedBefore:6",
+          "a8@373 d8@366 split:8 unified:10 collapsedBefore:13",
+          "a17@389 d17@382 split:17 unified:23 collapsedBefore:8",
+          "a12@425 d12@418 split:12 unified:15 collapsedBefore:19",
+          "a11@448 d11@441 split:11 unified:14 collapsedBefore:11",
+          "a7@462 d7@455 split:7 unified:8 collapsedBefore:3",
+          "a14@475 d14@468 split:14 unified:17 collapsedBefore:6",
+          "a7@499 d7@492 split:7 unified:8 collapsedBefore:10",
+          "a7@533 d7@526 split:7 unified:8 collapsedBefore:27",
+          "a12@597 d12@590 split:12 unified:17 collapsedBefore:57",
+          "a8@610 d8@603 split:8 unified:10 collapsedBefore:1",
+          "a15@621 d15@614 split:15 unified:18 collapsedBefore:3",
+          "a8@642 d8@635 split:8 unified:10 collapsedBefore:6",
+          "a12@686 d12@679 split:12 unified:14 collapsedBefore:36",
+          "a8@711 d8@704 split:8 unified:10 collapsedBefore:13",
+          "a7@720 d7@713 split:7 unified:8 collapsedBefore:1",
+          "a21@742 d21@735 split:21 unified:27 collapsedBefore:15",
+          "a51@792 d45@785 split:51 unified:61 collapsedBefore:29",
+          "a32@846 d30@833 split:32 unified:38 collapsedBefore:3",
+          "a7@879 d7@864 split:7 unified:8 collapsedBefore:1",
+          "a21@903 d21@888 split:21 unified:28 collapsedBefore:17",
+          "a9@930 d9@915 split:9 unified:11 collapsedBefore:6",
+          "a15@953 d15@938 split:15 unified:18 collapsedBefore:14",
+          "a12@971 d12@956 split:12 unified:15 collapsedBefore:3",
+          "a29@988 d29@973 split:29 unified:38 collapsedBefore:5",
+          "a19@1019 d19@1004 split:19 unified:23 collapsedBefore:2",
+        ],
+        "name": "packages/diffs/src/style.css",
+        "prevName": undefined,
+        "totals": "split:1037 unified:1283 additionLines:700 deletionLines:685",
+        "type": "change",
+      },
+      {
+        "hunks": [
+          "a7@27 d7@27 split:7 unified:8 collapsedBefore:26",
+          "a7@76 d7@76 split:7 unified:8 collapsedBefore:42",
+        ],
+        "name": "packages/diffs/src/utils/createFileHeaderElement.ts",
+        "prevName": undefined,
+        "totals": "split:82 unified:84 additionLines:14 deletionLines:14",
+        "type": "change",
+      },
+      {
+        "hunks": [
+          "a7@21 d7@21 split:7 unified:8 collapsedBefore:20",
+          "a7@36 d7@36 split:7 unified:8 collapsedBefore:8",
+        ],
+        "name": "packages/diffs/src/utils/createPreElement.ts",
+        "prevName": undefined,
+        "totals": "split:42 unified:44 additionLines:14 deletionLines:14",
+        "type": "change",
+      },
+      {
+        "hunks": [
+          "a7@22 d7@22 split:7 unified:8 collapsedBefore:21",
+        ],
+        "name": "packages/diffs/src/utils/createSeparator.ts",
+        "prevName": undefined,
+        "totals": "split:28 unified:29 additionLines:7 deletionLines:7",
+        "type": "change",
+      },
+      {
+        "hunks": [
+          "a3@1 d3@1 split:3 unified:4 collapsedBefore:0",
+        ],
+        "name": "packages/diffs/src/utils/formatCSSVariablePrefix.ts",
+        "prevName": undefined,
+        "totals": "split:3 unified:4 additionLines:3 deletionLines:3",
+        "type": "change",
+      },
+      {
+        "hunks": [
+          "a23@5 d23@5 split:23 unified:33 collapsedBefore:4",
+        ],
+        "name": "packages/diffs/src/utils/getIconForType.ts",
+        "prevName": undefined,
+        "totals": "split:27 unified:37 additionLines:23 deletionLines:23",
+        "type": "change",
+      },
+      {
+        "hunks": [
+          "a13@41 d13@41 split:13 unified:15 collapsedBefore:40",
+        ],
+        "name": "packages/diffs/src/utils/setWrapperNodeProps.ts",
+        "prevName": undefined,
+        "totals": "split:53 unified:55 additionLines:13 deletionLines:13",
+        "type": "change",
+      },
+      {
+        "hunks": [
+          "a7@90 d7@90 split:7 unified:8 collapsedBefore:89",
+          "a7@100 d7@100 split:7 unified:8 collapsedBefore:3",
+        ],
+        "name": "packages/diffs/test/FileRenderer.ast.test.ts",
+        "prevName": undefined,
+        "totals": "split:106 unified:108 additionLines:14 deletionLines:14",
+        "type": "change",
+      },
+      {
+        "hunks": [
+          "a7@20 d7@20 split:7 unified:8 collapsedBefore:19",
+        ],
+        "name": "sprite.config.js",
+        "prevName": undefined,
+        "totals": "split:26 unified:27 additionLines:7 deletionLines:7",
+        "type": "change",
+      },
+    ],
+    "patchIndex": 3,
+  },
+  {
+    "files": [
+      {
+        "hunks": [
+          "a6@5 d4@5 split:6 unified:7 collapsedBefore:4",
+        ],
+        "name": ".prettierignore",
+        "prevName": undefined,
+        "totals": "split:10 unified:11 additionLines:6 deletionLines:4",
+        "type": "change",
+      },
+    ],
+    "patchIndex": 4,
+  },
+  {
+    "files": [
+      {
+        "hunks": [
+          "a6@1 d6@1 split:6 unified:7 collapsedBefore:0",
+          "a7@27 d7@27 split:7 unified:8 collapsedBefore:20",
+        ],
+        "name": "apps/demo/src/components/App.tsx",
+        "prevName": undefined,
+        "totals": "split:33 unified:35 additionLines:13 deletionLines:13",
+        "type": "change",
+      },
+      {
+        "hunks": [
+          "a11@2 d11@2 split:12 unified:12 collapsedBefore:1",
+          "a7@318 d7@318 split:7 unified:8 collapsedBefore:305",
+        ],
+        "name": "apps/demo/src/main.ts",
+        "prevName": undefined,
+        "totals": "split:325 unified:326 additionLines:18 deletionLines:18",
+        "type": "change",
+      },
+      {
+        "hunks": [
+          "a8@9 d8@9 split:8 unified:10 collapsedBefore:8",
+          "a9@42 d9@42 split:9 unified:11 collapsedBefore:25",
+          "a8@80 d8@80 split:8 unified:10 collapsedBefore:29",
+          "a9@110 d9@110 split:9 unified:11 collapsedBefore:22",
+        ],
+        "name": "apps/docs/app/diff-examples/SplitUnified/constants.ts",
+        "prevName": undefined,
+        "totals": "split:118 unified:126 additionLines:34 deletionLines:34",
+        "type": "change",
+      },
+      {
+        "hunks": [
+          "a7@401 d7@401 split:7 unified:8 collapsedBefore:400",
+        ],
+        "name": "apps/docs/app/docs/WorkerPool/constants.ts",
+        "prevName": undefined,
+        "totals": "split:407 unified:408 additionLines:7 deletionLines:7",
+        "type": "change",
+      },
+      {
+        "hunks": [
+          "a7@39 d7@39 split:7 unified:8 collapsedBefore:38",
+          "a7@72 d7@72 split:7 unified:8 collapsedBefore:26",
+        ],
+        "name": "packages/diffs/src/components/File.ts",
+        "prevName": undefined,
+        "totals": "split:78 unified:80 additionLines:14 deletionLines:14",
+        "type": "change",
+      },
+      {
+        "hunks": [
+          "a7@48 d7@48 split:7 unified:8 collapsedBefore:47",
+          "a7@91 d7@91 split:7 unified:8 collapsedBefore:36",
+        ],
+        "name": "packages/diffs/src/components/FileDiff.ts",
+        "prevName": undefined,
+        "totals": "split:97 unified:99 additionLines:14 deletionLines:14",
+        "type": "change",
+      },
+      {
+        "hunks": [
+          "a7@4 d7@4 split:7 unified:8 collapsedBefore:3",
+          "a7@31 d7@31 split:7 unified:8 collapsedBefore:20",
+          "a7@67 d7@67 split:7 unified:8 collapsedBefore:29",
+          "a7@99 d7@99 split:7 unified:8 collapsedBefore:25",
+        ],
+        "name": "packages/diffs/src/components/FileStream.ts",
+        "prevName": undefined,
+        "totals": "split:105 unified:109 additionLines:28 deletionLines:28",
+        "type": "change",
+      },
+      {
+        "hunks": [
+          "a4@36 d4@36 split:4 unified:5 collapsedBefore:35",
+        ],
+        "name": "packages/diffs/src/components/web-components.ts",
+        "prevName": undefined,
+        "totals": "split:39 unified:40 additionLines:4 deletionLines:4",
+        "type": "change",
+      },
+      {
+        "hunks": [
+          "a6@1 d6@1 split:6 unified:7 collapsedBefore:0",
+          "a7@118 d7@118 split:7 unified:8 collapsedBefore:111",
+        ],
+        "name": "packages/diffs/src/highlighter/languages.ts",
+        "prevName": undefined,
+        "totals": "split:124 unified:126 additionLines:13 deletionLines:13",
+        "type": "change",
+      },
+      {
+        "hunks": [
+          "a8@1 d8@1 split:8 unified:10 collapsedBefore:0",
+          "a26@19 d26@19 split:26 unified:31 collapsedBefore:10",
+          "a11@83 d11@83 split:11 unified:13 collapsedBefore:38",
+          "a7@96 d7@96 split:7 unified:8 collapsedBefore:2",
+        ],
+        "name": "packages/diffs/src/highlighter/shared_highlighter.ts",
+        "prevName": undefined,
+        "totals": "split:102 unified:112 additionLines:52 deletionLines:52",
+        "type": "change",
+      },
+      {
+        "hunks": [
+          "a19@2 d18@2 split:19 unified:23 collapsedBefore:1",
+          "a7@29 d7@28 split:7 unified:8 collapsedBefore:8",
+          "a12@45 d12@44 split:12 unified:14 collapsedBefore:9",
+          "a7@60 d7@59 split:7 unified:8 collapsedBefore:3",
+          "a7@107 d7@106 split:7 unified:8 collapsedBefore:40",
+          "a10@136 d10@135 split:10 unified:13 collapsedBefore:22",
+          "a9@164 d7@163 split:9 unified:10 collapsedBefore:18",
+        ],
+        "name": "packages/diffs/src/highlighter/themes.ts",
+        "prevName": undefined,
+        "totals": "split:172 unified:185 additionLines:71 deletionLines:68",
+        "type": "change",
+      },
+      {
+        "hunks": [
+          "a11@14 d11@14 split:12 unified:12 collapsedBefore:13",
+          "a7@132 d7@132 split:7 unified:8 collapsedBefore:107",
+          "a7@248 d7@248 split:7 unified:8 collapsedBefore:109",
+          "a7@424 d7@424 split:7 unified:8 collapsedBefore:169",
+        ],
+        "name": "packages/diffs/src/renderers/DiffHunksRenderer.ts",
+        "prevName": undefined,
+        "totals": "split:431 unified:434 additionLines:32 deletionLines:32",
+        "type": "change",
+      },
+      {
+        "hunks": [
+          "a9@11 d9@11 split:10 unified:10 collapsedBefore:10",
+          "a7@57 d7@57 split:7 unified:8 collapsedBefore:37",
+          "a7@247 d7@247 split:7 unified:8 collapsedBefore:183",
+          "a7@350 d7@350 split:7 unified:8 collapsedBefore:96",
+        ],
+        "name": "packages/diffs/src/renderers/FileRenderer.ts",
+        "prevName": undefined,
+        "totals": "split:357 unified:360 additionLines:30 deletionLines:30",
+        "type": "change",
+      },
+      {
+        "hunks": [
+          "a17@31 d17@31 split:17 unified:21 collapsedBefore:30",
+          "a7@119 d7@119 split:7 unified:8 collapsedBefore:71",
+          "a12@324 d12@324 split:12 unified:14 collapsedBefore:198",
+        ],
+        "name": "packages/diffs/src/types.ts",
+        "prevName": undefined,
+        "totals": "split:335 unified:342 additionLines:36 deletionLines:36",
+        "type": "change",
+      },
+      {
+        "hunks": [
+          "a8@1 d8@1 split:8 unified:11 collapsedBefore:0",
+        ],
+        "name": "packages/diffs/src/utils/areThemesEqual.ts",
+        "prevName": undefined,
+        "totals": "split:8 unified:11 additionLines:8 deletionLines:8",
+        "type": "change",
+      },
+      {
+        "hunks": [
+          "a13@1 d13@1 split:13 unified:16 collapsedBefore:0",
+        ],
+        "name": "packages/diffs/src/utils/getHighlighterOptions.ts",
+        "prevName": undefined,
+        "totals": "split:13 unified:16 additionLines:13 deletionLines:13",
+        "type": "change",
+      },
+      {
+        "hunks": [
+          "a15@1 d15@1 split:15 unified:19 collapsedBefore:0",
+        ],
+        "name": "packages/diffs/src/utils/getHighlighterThemeStyles.ts",
+        "prevName": undefined,
+        "totals": "split:15 unified:19 additionLines:15 deletionLines:15",
+        "type": "change",
+      },
+      {
+        "hunks": [
+          "a10@1 d10@1 split:10 unified:14 collapsedBefore:0",
+        ],
+        "name": "packages/diffs/src/utils/getThemes.ts",
+        "prevName": undefined,
+        "totals": "split:10 unified:14 additionLines:10 deletionLines:10",
+        "type": "change",
+      },
+      {
+        "hunks": [
+          "a13@4 d13@4 split:15 unified:15 collapsedBefore:3",
+          "a7@29 d7@29 split:7 unified:8 collapsedBefore:12",
+          "a7@403 d7@403 split:7 unified:8 collapsedBefore:367",
+          "a7@421 d7@421 split:7 unified:8 collapsedBefore:11",
+        ],
+        "name": "packages/diffs/src/utils/renderDiffWithHighlighter.ts",
+        "prevName": undefined,
+        "totals": "split:429 unified:432 additionLines:34 deletionLines:34",
+        "type": "change",
+      },
+      {
+        "hunks": [
+          "a9@1 d9@1 split:11 unified:11 collapsedBefore:0",
+          "a7@16 d7@16 split:7 unified:8 collapsedBefore:6",
+          "a7@39 d7@39 split:7 unified:8 collapsedBefore:16",
+        ],
+        "name": "packages/diffs/src/utils/renderFileWithHighlighter.ts",
+        "prevName": undefined,
+        "totals": "split:47 unified:49 additionLines:23 deletionLines:23",
+        "type": "change",
+      },
+      {
+        "hunks": [
+          "a10@14 d10@14 split:12 unified:12 collapsedBefore:13",
+          "a7@72 d7@72 split:7 unified:8 collapsedBefore:48",
+          "a7@134 d7@134 split:7 unified:8 collapsedBefore:55",
+          "a7@181 d7@181 split:7 unified:8 collapsedBefore:40",
+        ],
+        "name": "packages/diffs/src/worker/WorkerPoolManager.ts",
+        "prevName": undefined,
+        "totals": "split:189 unified:192 additionLines:31 deletionLines:31",
+        "type": "change",
+      },
+      {
+        "hunks": [
+          "a9@1 d9@1 split:10 unified:10 collapsedBefore:0",
+          "a7@16 d7@16 split:7 unified:8 collapsedBefore:6",
+          "a7@69 d7@69 split:7 unified:8 collapsedBefore:46",
+        ],
+        "name": "packages/diffs/src/worker/types.ts",
+        "prevName": undefined,
+        "totals": "split:76 unified:78 additionLines:23 deletionLines:23",
+        "type": "change",
+      },
+      {
+        "hunks": [
+          "a7@6 d7@6 split:7 unified:8 collapsedBefore:5",
+          "a7@135 d7@135 split:7 unified:8 collapsedBefore:122",
+        ],
+        "name": "packages/diffs/src/worker/worker.ts",
+        "prevName": undefined,
+        "totals": "split:141 unified:143 additionLines:14 deletionLines:14",
+        "type": "change",
+      },
+      {
+        "hunks": [
+          "a11@3 d11@3 split:11 unified:14 collapsedBefore:2",
+        ],
+        "name": "packages/diffs/test/mocks.ts",
+        "prevName": undefined,
+        "totals": "split:13 unified:16 additionLines:11 deletionLines:11",
+        "type": "change",
+      },
+    ],
+    "patchIndex": 5,
+  },
+  {
+    "files": [
+      {
+        "hunks": [
+          "a7@305 d7@305 split:7 unified:8 collapsedBefore:304",
+          "a7@318 d7@318 split:7 unified:8 collapsedBefore:6",
+          "a7@331 d7@331 split:7 unified:8 collapsedBefore:6",
+          "a7@344 d7@344 split:7 unified:8 collapsedBefore:6",
+          "a7@357 d7@357 split:7 unified:8 collapsedBefore:6",
+          "a7@413 d7@413 split:7 unified:8 collapsedBefore:49",
+          "a7@426 d7@426 split:7 unified:8 collapsedBefore:6",
+          "a7@441 d7@441 split:7 unified:8 collapsedBefore:8",
+          "a7@462 d7@462 split:7 unified:8 collapsedBefore:14",
+          "a7@475 d7@475 split:7 unified:8 collapsedBefore:6",
+          "a7@490 d7@490 split:7 unified:8 collapsedBefore:8",
+          "a7@511 d7@511 split:7 unified:8 collapsedBefore:14",
+          "a7@524 d7@524 split:7 unified:8 collapsedBefore:6",
+          "a7@580 d7@580 split:7 unified:8 collapsedBefore:49",
+          "a7@593 d7@593 split:7 unified:8 collapsedBefore:6",
+          "a7@606 d7@606 split:7 unified:8 collapsedBefore:6",
+          "a7@619 d7@619 split:7 unified:8 collapsedBefore:6",
+          "a7@632 d7@632 split:7 unified:8 collapsedBefore:6",
+          "a7@738 d7@738 split:7 unified:8 collapsedBefore:99",
+          "a7@751 d7@751 split:7 unified:8 collapsedBefore:6",
+          "a7@764 d7@764 split:7 unified:8 collapsedBefore:6",
+          "a7@777 d7@777 split:7 unified:8 collapsedBefore:6",
+          "a7@790 d7@790 split:7 unified:8 collapsedBefore:6",
+          "a7@803 d7@803 split:7 unified:8 collapsedBefore:6",
+          "a7@859 d7@859 split:7 unified:8 collapsedBefore:49",
+          "a7@872 d7@872 split:7 unified:8 collapsedBefore:6",
+          "a7@928 d7@928 split:7 unified:8 collapsedBefore:49",
+          "a7@941 d7@941 split:7 unified:8 collapsedBefore:6",
+          "a7@954 d7@954 split:7 unified:8 collapsedBefore:6",
+          "a7@1010 d7@1010 split:7 unified:8 collapsedBefore:49",
+          "a7@1025 d7@1025 split:7 unified:8 collapsedBefore:8",
+          "a7@1046 d7@1046 split:7 unified:8 collapsedBefore:14",
+          "a7@1102 d7@1102 split:7 unified:8 collapsedBefore:49",
+          "a7@1115 d7@1115 split:7 unified:8 collapsedBefore:6",
+          "a7@1128 d7@1128 split:7 unified:8 collapsedBefore:6",
+          "a7@1184 d7@1184 split:7 unified:8 collapsedBefore:49",
+          "a7@1197 d7@1197 split:7 unified:8 collapsedBefore:6",
+          "a7@1210 d7@1210 split:7 unified:8 collapsedBefore:6",
+          "a7@1223 d7@1223 split:7 unified:8 collapsedBefore:6",
+          "a7@1236 d7@1236 split:7 unified:8 collapsedBefore:6",
+          "a7@1292 d7@1292 split:7 unified:8 collapsedBefore:49",
+          "a7@1305 d7@1305 split:7 unified:8 collapsedBefore:6",
+          "a7@1318 d7@1318 split:7 unified:8 collapsedBefore:6",
+          "a7@1374 d7@1374 split:7 unified:8 collapsedBefore:49",
+          "a7@1430 d7@1430 split:7 unified:8 collapsedBefore:49",
+          "a7@1490 d7@1490 split:7 unified:8 collapsedBefore:53",
+          "a7@1503 d7@1503 split:7 unified:8 collapsedBefore:6",
+          "a7@1516 d7@1516 split:7 unified:8 collapsedBefore:6",
+          "a7@1529 d7@1529 split:7 unified:8 collapsedBefore:6",
+          "a7@1542 d7@1542 split:7 unified:8 collapsedBefore:6",
+          "a7@1598 d7@1598 split:7 unified:8 collapsedBefore:49",
+          "a7@1611 d7@1611 split:7 unified:8 collapsedBefore:6",
+          "a7@1624 d7@1624 split:7 unified:8 collapsedBefore:6",
+          "a7@1637 d7@1637 split:7 unified:8 collapsedBefore:6",
+          "a7@1650 d7@1650 split:7 unified:8 collapsedBefore:6",
+          "a7@1706 d7@1706 split:7 unified:8 collapsedBefore:49",
+          "a7@1719 d7@1719 split:7 unified:8 collapsedBefore:6",
+          "a7@1734 d7@1734 split:7 unified:8 collapsedBefore:8",
+          "a7@1755 d7@1755 split:7 unified:8 collapsedBefore:14",
+          "a7@1768 d7@1768 split:7 unified:8 collapsedBefore:6",
+          "a7@1783 d7@1783 split:7 unified:8 collapsedBefore:8",
+          "a7@1804 d7@1804 split:7 unified:8 collapsedBefore:14",
+          "a7@1817 d7@1817 split:7 unified:8 collapsedBefore:6",
+          "a7@1932 d7@1932 split:7 unified:8 collapsedBefore:108",
+          "a7@1945 d7@1945 split:7 unified:8 collapsedBefore:6",
+          "a7@1958 d7@1958 split:7 unified:8 collapsedBefore:6",
+          "a7@1971 d7@1971 split:7 unified:8 collapsedBefore:6",
+          "a7@1984 d7@1984 split:7 unified:8 collapsedBefore:6",
+          "a7@1997 d7@1997 split:7 unified:8 collapsedBefore:6",
+          "a7@2053 d7@2053 split:7 unified:8 collapsedBefore:49",
+          "a7@2066 d7@2066 split:7 unified:8 collapsedBefore:6",
+          "a7@2122 d7@2122 split:7 unified:8 collapsedBefore:49",
+          "a7@2135 d7@2135 split:7 unified:8 collapsedBefore:6",
+          "a7@2148 d7@2148 split:7 unified:8 collapsedBefore:6",
+          "a7@2204 d7@2204 split:7 unified:8 collapsedBefore:49",
+          "a7@2219 d7@2219 split:7 unified:8 collapsedBefore:8",
+          "a7@2240 d7@2240 split:7 unified:8 collapsedBefore:14",
+          "a7@2296 d7@2296 split:7 unified:8 collapsedBefore:49",
+          "a7@2309 d7@2309 split:7 unified:8 collapsedBefore:6",
+          "a7@2322 d7@2322 split:7 unified:8 collapsedBefore:6",
+          "a7@2387 d7@2387 split:7 unified:8 collapsedBefore:58",
+          "a7@2400 d7@2400 split:7 unified:8 collapsedBefore:6",
+          "a7@2413 d7@2413 split:7 unified:8 collapsedBefore:6",
+          "a7@2469 d7@2469 split:7 unified:8 collapsedBefore:49",
+          "a7@2525 d7@2525 split:7 unified:8 collapsedBefore:49",
+          "a7@2557 d7@2557 split:7 unified:8 collapsedBefore:25",
+          "a9@2638 d9@2638 split:9 unified:11 collapsedBefore:74",
+          "a19@2650 d19@2650 split:20 unified:22 collapsedBefore:3",
+          "a7@2964 d7@2964 split:7 unified:8 collapsedBefore:295",
+          "a7@2977 d7@2977 split:7 unified:8 collapsedBefore:6",
+          "a7@2990 d7@2990 split:7 unified:8 collapsedBefore:6",
+          "a7@3003 d7@3003 split:7 unified:8 collapsedBefore:6",
+          "a7@3016 d7@3016 split:7 unified:8 collapsedBefore:6",
+          "a7@3072 d7@3072 split:7 unified:8 collapsedBefore:49",
+          "a7@3085 d7@3085 split:7 unified:8 collapsedBefore:6",
+          "a7@3098 d7@3098 split:7 unified:8 collapsedBefore:6",
+          "a7@3111 d7@3111 split:7 unified:8 collapsedBefore:6",
+          "a7@3124 d7@3124 split:7 unified:8 collapsedBefore:6",
+          "a7@3180 d7@3180 split:7 unified:8 collapsedBefore:49",
+          "a7@3193 d7@3193 split:7 unified:8 collapsedBefore:6",
+          "a7@3208 d7@3208 split:7 unified:8 collapsedBefore:8",
+          "a7@3229 d7@3229 split:7 unified:8 collapsedBefore:14",
+          "a7@3242 d7@3242 split:7 unified:8 collapsedBefore:6",
+          "a7@3257 d7@3257 split:7 unified:8 collapsedBefore:8",
+          "a7@3278 d7@3278 split:7 unified:8 collapsedBefore:14",
+          "a7@3291 d7@3291 split:7 unified:8 collapsedBefore:6",
+          "a7@3406 d7@3406 split:7 unified:8 collapsedBefore:108",
+          "a7@3419 d7@3419 split:7 unified:8 collapsedBefore:6",
+          "a7@3432 d7@3432 split:7 unified:8 collapsedBefore:6",
+          "a7@3445 d7@3445 split:7 unified:8 collapsedBefore:6",
+          "a7@3458 d7@3458 split:7 unified:8 collapsedBefore:6",
+          "a7@3471 d7@3471 split:7 unified:8 collapsedBefore:6",
+          "a7@3527 d7@3527 split:7 unified:8 collapsedBefore:49",
+          "a7@3540 d7@3540 split:7 unified:8 collapsedBefore:6",
+          "a7@3596 d7@3596 split:7 unified:8 collapsedBefore:49",
+          "a7@3609 d7@3609 split:7 unified:8 collapsedBefore:6",
+          "a7@3622 d7@3622 split:7 unified:8 collapsedBefore:6",
+          "a7@3678 d7@3678 split:7 unified:8 collapsedBefore:49",
+          "a7@3693 d7@3693 split:7 unified:8 collapsedBefore:8",
+          "a7@3714 d7@3714 split:7 unified:8 collapsedBefore:14",
+          "a7@3770 d7@3770 split:7 unified:8 collapsedBefore:49",
+          "a7@3783 d7@3783 split:7 unified:8 collapsedBefore:6",
+          "a7@3796 d7@3796 split:7 unified:8 collapsedBefore:6",
+          "a7@3861 d7@3861 split:7 unified:8 collapsedBefore:58",
+          "a7@3874 d7@3874 split:7 unified:8 collapsedBefore:6",
+          "a7@3887 d7@3887 split:7 unified:8 collapsedBefore:6",
+          "a7@3943 d7@3943 split:7 unified:8 collapsedBefore:49",
+          "a7@3999 d7@3999 split:7 unified:8 collapsedBefore:49",
+          "a7@4068 d7@4068 split:7 unified:8 collapsedBefore:62",
+          "a7@4081 d7@4081 split:7 unified:8 collapsedBefore:6",
+          "a7@4094 d7@4094 split:7 unified:8 collapsedBefore:6",
+          "a7@4107 d7@4107 split:7 unified:8 collapsedBefore:6",
+          "a7@4120 d7@4120 split:7 unified:8 collapsedBefore:6",
+          "a7@4176 d7@4176 split:7 unified:8 collapsedBefore:49",
+          "a7@4189 d7@4189 split:7 unified:8 collapsedBefore:6",
+          "a7@4204 d7@4204 split:7 unified:8 collapsedBefore:8",
+          "a7@4225 d7@4225 split:7 unified:8 collapsedBefore:14",
+          "a7@4238 d7@4238 split:7 unified:8 collapsedBefore:6",
+          "a7@4253 d7@4253 split:7 unified:8 collapsedBefore:8",
+          "a7@4274 d7@4274 split:7 unified:8 collapsedBefore:14",
+          "a7@4287 d7@4287 split:7 unified:8 collapsedBefore:6",
+          "a7@4343 d7@4343 split:7 unified:8 collapsedBefore:49",
+          "a7@4356 d7@4356 split:7 unified:8 collapsedBefore:6",
+          "a7@4369 d7@4369 split:7 unified:8 collapsedBefore:6",
+          "a7@4382 d7@4382 split:7 unified:8 collapsedBefore:6",
+          "a7@4395 d7@4395 split:7 unified:8 collapsedBefore:6",
+          "a7@4501 d7@4501 split:7 unified:8 collapsedBefore:99",
+          "a7@4514 d7@4514 split:7 unified:8 collapsedBefore:6",
+          "a7@4527 d7@4527 split:7 unified:8 collapsedBefore:6",
+          "a7@4540 d7@4540 split:7 unified:8 collapsedBefore:6",
+          "a7@4553 d7@4553 split:7 unified:8 collapsedBefore:6",
+          "a7@4566 d7@4566 split:7 unified:8 collapsedBefore:6",
+          "a7@4622 d7@4622 split:7 unified:8 collapsedBefore:49",
+          "a7@4635 d7@4635 split:7 unified:8 collapsedBefore:6",
+          "a7@4691 d7@4691 split:7 unified:8 collapsedBefore:49",
+          "a7@4704 d7@4704 split:7 unified:8 collapsedBefore:6",
+          "a7@4717 d7@4717 split:7 unified:8 collapsedBefore:6",
+          "a7@4773 d7@4773 split:7 unified:8 collapsedBefore:49",
+          "a7@4788 d7@4788 split:7 unified:8 collapsedBefore:8",
+          "a7@4809 d7@4809 split:7 unified:8 collapsedBefore:14",
+          "a7@4865 d7@4865 split:7 unified:8 collapsedBefore:49",
+          "a7@4878 d7@4878 split:7 unified:8 collapsedBefore:6",
+          "a7@4891 d7@4891 split:7 unified:8 collapsedBefore:6",
+          "a7@4947 d7@4947 split:7 unified:8 collapsedBefore:49",
+          "a7@4960 d7@4960 split:7 unified:8 collapsedBefore:6",
+          "a7@4973 d7@4973 split:7 unified:8 collapsedBefore:6",
+          "a7@4986 d7@4986 split:7 unified:8 collapsedBefore:6",
+          "a7@4999 d7@4999 split:7 unified:8 collapsedBefore:6",
+          "a7@5055 d7@5055 split:7 unified:8 collapsedBefore:49",
+          "a7@5068 d7@5068 split:7 unified:8 collapsedBefore:6",
+          "a7@5081 d7@5081 split:7 unified:8 collapsedBefore:6",
+          "a7@5137 d7@5137 split:7 unified:8 collapsedBefore:49",
+          "a7@5193 d7@5193 split:7 unified:8 collapsedBefore:49",
+          "a7@5225 d7@5225 split:7 unified:8 collapsedBefore:25",
+          "a9@5306 d9@5306 split:9 unified:11 collapsedBefore:74",
+          "a19@5318 d19@5318 split:20 unified:22 collapsedBefore:3",
+          "a7@5610 d7@5610 split:7 unified:8 collapsedBefore:273",
+          "a9@5691 d9@5691 split:9 unified:11 collapsedBefore:74",
+          "a19@5703 d19@5703 split:20 unified:22 collapsedBefore:3",
+          "a7@5752 d7@5752 split:7 unified:8 collapsedBefore:30",
+          "a7@5765 d7@5765 split:7 unified:8 collapsedBefore:6",
+          "a7@5778 d7@5778 split:7 unified:8 collapsedBefore:6",
+          "a7@5791 d7@5791 split:7 unified:8 collapsedBefore:6",
+          "a7@5804 d7@5804 split:7 unified:8 collapsedBefore:6",
+          "a7@5860 d7@5860 split:7 unified:8 collapsedBefore:49",
+          "a7@5873 d7@5873 split:7 unified:8 collapsedBefore:6",
+          "a7@5886 d7@5886 split:7 unified:8 collapsedBefore:6",
+          "a7@5899 d7@5899 split:7 unified:8 collapsedBefore:6",
+          "a7@5912 d7@5912 split:7 unified:8 collapsedBefore:6",
+          "a7@5968 d7@5968 split:7 unified:8 collapsedBefore:49",
+          "a7@5981 d7@5981 split:7 unified:8 collapsedBefore:6",
+          "a7@5996 d7@5996 split:7 unified:8 collapsedBefore:8",
+          "a7@6017 d7@6017 split:7 unified:8 collapsedBefore:14",
+          "a7@6030 d7@6030 split:7 unified:8 collapsedBefore:6",
+          "a7@6045 d7@6045 split:7 unified:8 collapsedBefore:8",
+          "a7@6066 d7@6066 split:7 unified:8 collapsedBefore:14",
+          "a7@6079 d7@6079 split:7 unified:8 collapsedBefore:6",
+          "a7@6135 d7@6135 split:7 unified:8 collapsedBefore:49",
+          "a7@6148 d7@6148 split:7 unified:8 collapsedBefore:6",
+          "a7@6163 d7@6163 split:7 unified:8 collapsedBefore:8",
+          "a7@6184 d7@6184 split:7 unified:8 collapsedBefore:14",
+          "a7@6197 d7@6197 split:7 unified:8 collapsedBefore:6",
+          "a7@6212 d7@6212 split:7 unified:8 collapsedBefore:8",
+          "a7@6233 d7@6233 split:7 unified:8 collapsedBefore:14",
+          "a7@6246 d7@6246 split:7 unified:8 collapsedBefore:6",
+          "a7@6302 d7@6302 split:7 unified:8 collapsedBefore:49",
+          "a7@6315 d7@6315 split:7 unified:8 collapsedBefore:6",
+          "a7@6328 d7@6328 split:7 unified:8 collapsedBefore:6",
+          "a7@6341 d7@6341 split:7 unified:8 collapsedBefore:6",
+          "a7@6354 d7@6354 split:7 unified:8 collapsedBefore:6",
+          "a7@6460 d7@6460 split:7 unified:8 collapsedBefore:99",
+          "a7@6473 d7@6473 split:7 unified:8 collapsedBefore:6",
+          "a7@6486 d7@6486 split:7 unified:8 collapsedBefore:6",
+          "a7@6499 d7@6499 split:7 unified:8 collapsedBefore:6",
+          "a7@6512 d7@6512 split:7 unified:8 collapsedBefore:6",
+          "a7@6525 d7@6525 split:7 unified:8 collapsedBefore:6",
+          "a7@6581 d7@6581 split:7 unified:8 collapsedBefore:49",
+          "a7@6594 d7@6594 split:7 unified:8 collapsedBefore:6",
+          "a7@6650 d7@6650 split:7 unified:8 collapsedBefore:49",
+          "a7@6663 d7@6663 split:7 unified:8 collapsedBefore:6",
+          "a7@6676 d7@6676 split:7 unified:8 collapsedBefore:6",
+          "a7@6732 d7@6732 split:7 unified:8 collapsedBefore:49",
+          "a7@6747 d7@6747 split:7 unified:8 collapsedBefore:8",
+          "a7@6768 d7@6768 split:7 unified:8 collapsedBefore:14",
+          "a7@6824 d7@6824 split:7 unified:8 collapsedBefore:49",
+          "a7@6839 d7@6839 split:7 unified:8 collapsedBefore:8",
+          "a7@6860 d7@6860 split:7 unified:8 collapsedBefore:14",
+          "a7@6916 d7@6916 split:7 unified:8 collapsedBefore:49",
+          "a7@6929 d7@6929 split:7 unified:8 collapsedBefore:6",
+          "a7@6942 d7@6942 split:7 unified:8 collapsedBefore:6",
+          "a7@6998 d7@6998 split:7 unified:8 collapsedBefore:49",
+          "a7@7011 d7@7011 split:7 unified:8 collapsedBefore:6",
+          "a7@7024 d7@7024 split:7 unified:8 collapsedBefore:6",
+          "a7@7037 d7@7037 split:7 unified:8 collapsedBefore:6",
+          "a7@7050 d7@7050 split:7 unified:8 collapsedBefore:6",
+          "a7@7106 d7@7106 split:7 unified:8 collapsedBefore:49",
+          "a7@7119 d7@7119 split:7 unified:8 collapsedBefore:6",
+          "a7@7132 d7@7132 split:7 unified:8 collapsedBefore:6",
+          "a7@7188 d7@7188 split:7 unified:8 collapsedBefore:49",
+          "a7@7244 d7@7244 split:7 unified:8 collapsedBefore:49",
+          "a7@7457 d7@7457 split:7 unified:8 collapsedBefore:206",
+          "a7@7470 d7@7470 split:7 unified:8 collapsedBefore:6",
+          "a7@7483 d7@7483 split:7 unified:8 collapsedBefore:6",
+          "a7@7496 d7@7496 split:7 unified:8 collapsedBefore:6",
+          "a7@7509 d7@7509 split:7 unified:8 collapsedBefore:6",
+          "a7@7565 d7@7565 split:7 unified:8 collapsedBefore:49",
+          "a7@7578 d7@7578 split:7 unified:8 collapsedBefore:6",
+          "a7@7591 d7@7591 split:7 unified:8 collapsedBefore:6",
+          "a7@7604 d7@7604 split:7 unified:8 collapsedBefore:6",
+          "a7@7617 d7@7617 split:7 unified:8 collapsedBefore:6",
+          "a7@7673 d7@7673 split:7 unified:8 collapsedBefore:49",
+          "a7@7686 d7@7686 split:7 unified:8 collapsedBefore:6",
+          "a7@7699 d7@7699 split:7 unified:8 collapsedBefore:6",
+          "a7@7712 d7@7712 split:7 unified:8 collapsedBefore:6",
+          "a7@7725 d7@7725 split:7 unified:8 collapsedBefore:6",
+          "a7@7831 d7@7831 split:7 unified:8 collapsedBefore:99",
+          "a7@7844 d7@7844 split:7 unified:8 collapsedBefore:6",
+          "a7@7857 d7@7857 split:7 unified:8 collapsedBefore:6",
+          "a7@7870 d7@7870 split:7 unified:8 collapsedBefore:6",
+          "a7@7883 d7@7883 split:7 unified:8 collapsedBefore:6",
+          "a7@7896 d7@7896 split:7 unified:8 collapsedBefore:6",
+          "a7@7952 d7@7952 split:7 unified:8 collapsedBefore:49",
+          "a7@7965 d7@7965 split:7 unified:8 collapsedBefore:6",
+          "a7@8021 d7@8021 split:7 unified:8 collapsedBefore:49",
+          "a7@8034 d7@8034 split:7 unified:8 collapsedBefore:6",
+          "a7@8047 d7@8047 split:7 unified:8 collapsedBefore:6",
+          "a7@8103 d7@8103 split:7 unified:8 collapsedBefore:49",
+          "a7@8116 d7@8116 split:7 unified:8 collapsedBefore:6",
+          "a7@8129 d7@8129 split:7 unified:8 collapsedBefore:6",
+          "a7@8185 d7@8185 split:7 unified:8 collapsedBefore:49",
+          "a7@8198 d7@8198 split:7 unified:8 collapsedBefore:6",
+          "a7@8211 d7@8211 split:7 unified:8 collapsedBefore:6",
+          "a7@8267 d7@8267 split:7 unified:8 collapsedBefore:49",
+          "a7@8280 d7@8280 split:7 unified:8 collapsedBefore:6",
+          "a7@8293 d7@8293 split:7 unified:8 collapsedBefore:6",
+          "a7@8306 d7@8306 split:7 unified:8 collapsedBefore:6",
+          "a7@8319 d7@8319 split:7 unified:8 collapsedBefore:6",
+          "a7@8375 d7@8375 split:7 unified:8 collapsedBefore:49",
+          "a7@8388 d7@8388 split:7 unified:8 collapsedBefore:6",
+          "a7@8401 d7@8401 split:7 unified:8 collapsedBefore:6",
+          "a7@8457 d7@8457 split:7 unified:8 collapsedBefore:49",
+          "a7@8513 d7@8513 split:7 unified:8 collapsedBefore:49",
+          "a7@8548 d7@8548 split:7 unified:8 collapsedBefore:28",
+          "a9@8616 d9@8616 split:9 unified:11 collapsedBefore:61",
+          "a19@8628 d19@8628 split:20 unified:22 collapsedBefore:3",
+          "a7@8828 d7@8828 split:7 unified:8 collapsedBefore:181",
+          "a7@8841 d7@8841 split:7 unified:8 collapsedBefore:6",
+          "a7@8854 d7@8854 split:7 unified:8 collapsedBefore:6",
+          "a7@8867 d7@8867 split:7 unified:8 collapsedBefore:6",
+          "a7@8880 d7@8880 split:7 unified:8 collapsedBefore:6",
+          "a7@8936 d7@8936 split:7 unified:8 collapsedBefore:49",
+          "a7@8949 d7@8949 split:7 unified:8 collapsedBefore:6",
+          "a7@8962 d7@8962 split:7 unified:8 collapsedBefore:6",
+          "a7@8975 d7@8975 split:7 unified:8 collapsedBefore:6",
+          "a7@8988 d7@8988 split:7 unified:8 collapsedBefore:6",
+          "a7@9044 d7@9044 split:7 unified:8 collapsedBefore:49",
+          "a7@9057 d7@9057 split:7 unified:8 collapsedBefore:6",
+          "a7@9070 d7@9070 split:7 unified:8 collapsedBefore:6",
+          "a7@9083 d7@9083 split:7 unified:8 collapsedBefore:6",
+          "a7@9096 d7@9096 split:7 unified:8 collapsedBefore:6",
+          "a7@9202 d7@9202 split:7 unified:8 collapsedBefore:99",
+          "a7@9215 d7@9215 split:7 unified:8 collapsedBefore:6",
+          "a7@9228 d7@9228 split:7 unified:8 collapsedBefore:6",
+          "a7@9241 d7@9241 split:7 unified:8 collapsedBefore:6",
+          "a7@9254 d7@9254 split:7 unified:8 collapsedBefore:6",
+          "a7@9267 d7@9267 split:7 unified:8 collapsedBefore:6",
+          "a7@9323 d7@9323 split:7 unified:8 collapsedBefore:49",
+          "a7@9336 d7@9336 split:7 unified:8 collapsedBefore:6",
+          "a7@9392 d7@9392 split:7 unified:8 collapsedBefore:49",
+          "a7@9405 d7@9405 split:7 unified:8 collapsedBefore:6",
+          "a7@9418 d7@9418 split:7 unified:8 collapsedBefore:6",
+          "a7@9474 d7@9474 split:7 unified:8 collapsedBefore:49",
+          "a7@9487 d7@9487 split:7 unified:8 collapsedBefore:6",
+          "a7@9500 d7@9500 split:7 unified:8 collapsedBefore:6",
+          "a7@9556 d7@9556 split:7 unified:8 collapsedBefore:49",
+          "a7@9569 d7@9569 split:7 unified:8 collapsedBefore:6",
+          "a7@9582 d7@9582 split:7 unified:8 collapsedBefore:6",
+          "a7@9638 d7@9638 split:7 unified:8 collapsedBefore:49",
+          "a7@9651 d7@9651 split:7 unified:8 collapsedBefore:6",
+          "a7@9664 d7@9664 split:7 unified:8 collapsedBefore:6",
+          "a7@9720 d7@9720 split:7 unified:8 collapsedBefore:49",
+          "a7@9776 d7@9776 split:7 unified:8 collapsedBefore:49",
+          "a7@9808 d7@9808 split:7 unified:8 collapsedBefore:25",
+          "a9@9876 d9@9876 split:9 unified:11 collapsedBefore:61",
+          "a19@9888 d19@9888 split:20 unified:22 collapsedBefore:3",
+        ],
+        "name": "packages/diffs/test/__snapshots__/DiffHunksRender.test.ts.snap",
+        "prevName": undefined,
+        "totals": "split:9911 unified:10246 additionLines:2345 deletionLines:2345",
+        "type": "change",
+      },
+      {
+        "hunks": [
+          "a7@36 d7@36 split:7 unified:8 collapsedBefore:35",
+          "a7@49 d7@49 split:7 unified:8 collapsedBefore:6",
+          "a7@62 d7@62 split:7 unified:8 collapsedBefore:6",
+          "a11@71 d11@71 split:11 unified:13 collapsedBefore:2",
+          "a7@88 d7@88 split:7 unified:8 collapsedBefore:6",
+          "a7@101 d7@101 split:7 unified:8 collapsedBefore:6",
+          "a7@114 d7@114 split:7 unified:8 collapsedBefore:6",
+          "a7@127 d7@127 split:7 unified:8 collapsedBefore:6",
+          "a7@140 d7@140 split:7 unified:8 collapsedBefore:6",
+          "a7@153 d7@153 split:7 unified:8 collapsedBefore:6",
+          "a7@259 d7@259 split:7 unified:8 collapsedBefore:99",
+          "a7@272 d7@272 split:7 unified:8 collapsedBefore:6",
+          "a7@285 d7@285 split:7 unified:8 collapsedBefore:6",
+          "a7@298 d7@298 split:7 unified:8 collapsedBefore:6",
+          "a7@354 d7@354 split:7 unified:8 collapsedBefore:49",
+          "a7@367 d7@367 split:7 unified:8 collapsedBefore:6",
+          "a11@376 d11@376 split:11 unified:13 collapsedBefore:2",
+          "a7@393 d7@393 split:7 unified:8 collapsedBefore:6",
+          "a7@406 d7@406 split:7 unified:8 collapsedBefore:6",
+          "a7@419 d7@419 split:7 unified:8 collapsedBefore:6",
+          "a7@432 d7@432 split:7 unified:8 collapsedBefore:6",
+          "a7@445 d7@445 split:7 unified:8 collapsedBefore:6",
+          "a7@501 d7@501 split:7 unified:8 collapsedBefore:49",
+          "a7@514 d7@514 split:7 unified:8 collapsedBefore:6",
+          "a11@523 d11@523 split:11 unified:13 collapsedBefore:2",
+          "a7@540 d7@540 split:7 unified:8 collapsedBefore:6",
+          "a7@553 d7@553 split:7 unified:8 collapsedBefore:6",
+          "a7@566 d7@566 split:7 unified:8 collapsedBefore:6",
+          "a7@579 d7@579 split:7 unified:8 collapsedBefore:6",
+          "a7@635 d7@635 split:7 unified:8 collapsedBefore:49",
+          "a7@648 d7@648 split:7 unified:8 collapsedBefore:6",
+          "a7@661 d7@661 split:7 unified:8 collapsedBefore:6",
+          "a7@717 d7@717 split:7 unified:8 collapsedBefore:49",
+          "a7@730 d7@730 split:7 unified:8 collapsedBefore:6",
+          "a7@786 d7@786 split:7 unified:8 collapsedBefore:49",
+          "a7@799 d7@799 split:7 unified:8 collapsedBefore:6",
+          "a7@812 d7@812 split:7 unified:8 collapsedBefore:6",
+          "a7@825 d7@825 split:7 unified:8 collapsedBefore:6",
+          "a7@881 d7@881 split:7 unified:8 collapsedBefore:49",
+          "a7@894 d7@894 split:7 unified:8 collapsedBefore:6",
+          "a7@907 d7@907 split:7 unified:8 collapsedBefore:6",
+          "a7@920 d7@920 split:7 unified:8 collapsedBefore:6",
+          "a7@976 d7@976 split:7 unified:8 collapsedBefore:49",
+          "a7@989 d7@989 split:7 unified:8 collapsedBefore:6",
+          "a7@1002 d7@1002 split:7 unified:8 collapsedBefore:6",
+          "a7@1015 d7@1015 split:7 unified:8 collapsedBefore:6",
+          "a7@1028 d7@1028 split:7 unified:8 collapsedBefore:6",
+          "a7@1084 d7@1084 split:7 unified:8 collapsedBefore:49",
+          "a7@1097 d7@1097 split:7 unified:8 collapsedBefore:6",
+          "a7@1110 d7@1110 split:7 unified:8 collapsedBefore:6",
+          "a7@1123 d7@1123 split:7 unified:8 collapsedBefore:6",
+          "a7@1179 d7@1179 split:7 unified:8 collapsedBefore:49",
+          "a7@1192 d7@1192 split:7 unified:8 collapsedBefore:6",
+          "a7@1248 d7@1248 split:7 unified:8 collapsedBefore:49",
+          "a7@1261 d7@1261 split:7 unified:8 collapsedBefore:6",
+          "a7@1274 d7@1274 split:7 unified:8 collapsedBefore:6",
+          "a7@1287 d7@1287 split:7 unified:8 collapsedBefore:6",
+          "a7@1300 d7@1300 split:7 unified:8 collapsedBefore:6",
+          "a7@1356 d7@1356 split:7 unified:8 collapsedBefore:49",
+          "a7@1412 d7@1412 split:7 unified:8 collapsedBefore:49",
+          "a7@1425 d7@1425 split:7 unified:8 collapsedBefore:6",
+          "a7@1438 d7@1438 split:7 unified:8 collapsedBefore:6",
+          "a7@1451 d7@1451 split:7 unified:8 collapsedBefore:6",
+          "a7@1464 d7@1464 split:7 unified:8 collapsedBefore:6",
+          "a7@1477 d7@1477 split:7 unified:8 collapsedBefore:6",
+          "a7@1490 d7@1490 split:7 unified:8 collapsedBefore:6",
+          "a7@1503 d7@1503 split:7 unified:8 collapsedBefore:6",
+          "a7@1516 d7@1516 split:7 unified:8 collapsedBefore:6",
+          "a7@1529 d7@1529 split:7 unified:8 collapsedBefore:6",
+          "a7@1542 d7@1542 split:7 unified:8 collapsedBefore:6",
+          "a7@1555 d7@1555 split:7 unified:8 collapsedBefore:6",
+          "a7@1568 d7@1568 split:7 unified:8 collapsedBefore:6",
+          "a7@1581 d7@1581 split:7 unified:8 collapsedBefore:6",
+          "a7@1594 d7@1594 split:7 unified:8 collapsedBefore:6",
+          "a7@1607 d7@1607 split:7 unified:8 collapsedBefore:6",
+          "a7@1620 d7@1620 split:7 unified:8 collapsedBefore:6",
+          "a7@1676 d7@1676 split:7 unified:8 collapsedBefore:49",
+        ],
+        "name": "packages/diffs/test/__snapshots__/FileRenderer.test.ts.snap",
+        "prevName": undefined,
+        "totals": "split:1682 unified:1762 additionLines:551 deletionLines:551",
+        "type": "change",
+      },
+    ],
+    "patchIndex": 6,
+  },
+  {
+    "files": [
+      {
+        "hunks": [],
+        "name": "apps/docs/app/ssr/SSRPage.tsx",
+        "prevName": "apps/docs/app/ssr/SSR_Page.tsx",
+        "totals": "split:0 unified:0 additionLines:0 deletionLines:0",
+        "type": "rename-pure",
+      },
+      {
+        "hunks": [
+          "a7@4 d7@4 split:7 unified:8 collapsedBefore:3",
+        ],
+        "name": "apps/docs/app/ssr/page.tsx",
+        "prevName": undefined,
+        "totals": "split:10 unified:11 additionLines:7 deletionLines:7",
+        "type": "change",
+      },
+    ],
+    "patchIndex": 7,
+  },
+  {
+    "files": [
+      {
+        "hunks": [
+          "a7@789 d7@789 split:7 unified:8 collapsedBefore:788",
+          "a7@908 d7@908 split:7 unified:8 collapsedBefore:112",
+          "a7@918 d7@918 split:7 unified:8 collapsedBefore:3",
+          "a7@929 d7@929 split:7 unified:8 collapsedBefore:4",
+          "a7@938 d7@938 split:7 unified:8 collapsedBefore:2",
+          "a62@967 d62@967 split:62 unified:78 collapsedBefore:22",
+        ],
+        "name": "apps/demo/src/mocks/diff.patch",
+        "prevName": undefined,
+        "totals": "split:1028 unified:1049 additionLines:97 deletionLines:97",
+        "type": "change",
+      },
+      {
+        "hunks": [
+          "a20@440 d20@440 split:20 unified:24 collapsedBefore:439",
+          "a39@462 d39@462 split:39 unified:47 collapsedBefore:2",
+          "a7@506 d7@506 split:7 unified:8 collapsedBefore:5",
+          "a92@516 d92@516 split:92 unified:117 collapsedBefore:3",
+          "a52@1158 d52@1158 split:52 unified:64 collapsedBefore:550",
+          "a12@1211 d12@1211 split:12 unified:14 collapsedBefore:1",
+          "a20@1990 d20@1990 split:20 unified:24 collapsedBefore:767",
+          "a32@2012 d32@2012 split:32 unified:39 collapsedBefore:2",
+          "a7@2050 d7@2050 split:7 unified:8 collapsedBefore:6",
+          "a8@2060 d8@2060 split:8 unified:10 collapsedBefore:3",
+          "a43@2070 d43@2070 split:43 unified:56 collapsedBefore:2",
+          "a12@2114 d12@2114 split:12 unified:16 collapsedBefore:1",
+          "a34@2127 d34@2127 split:34 unified:43 collapsedBefore:1",
+          "a12@2162 d12@2162 split:12 unified:14 collapsedBefore:1",
+          "a4@2188 d4@2188 split:4 unified:5 collapsedBefore:14",
+        ],
+        "name": "apps/demo/src/mocks/diff2.patch",
+        "prevName": undefined,
+        "totals": "split:2191 unified:2286 additionLines:394 deletionLines:394",
+        "type": "change",
+      },
+      {
+        "hunks": [
+          "a52@361 d52@361 split:52 unified:64 collapsedBefore:360",
+          "a12@414 d12@414 split:12 unified:14 collapsedBefore:1",
+          "a20@1193 d20@1193 split:20 unified:24 collapsedBefore:767",
+          "a32@1215 d32@1215 split:32 unified:39 collapsedBefore:2",
+          "a7@1253 d7@1253 split:7 unified:8 collapsedBefore:6",
+          "a8@1263 d8@1263 split:8 unified:10 collapsedBefore:3",
+          "a43@1273 d43@1273 split:43 unified:56 collapsedBefore:2",
+          "a12@1317 d12@1317 split:12 unified:16 collapsedBefore:1",
+          "a34@1330 d34@1330 split:34 unified:43 collapsedBefore:1",
+          "a12@1365 d12@1365 split:12 unified:14 collapsedBefore:1",
+          "a20@1832 d20@1832 split:20 unified:24 collapsedBefore:455",
+          "a39@1854 d39@1854 split:39 unified:47 collapsedBefore:2",
+          "a7@1898 d7@1898 split:7 unified:8 collapsedBefore:5",
+          "a92@1908 d92@1908 split:92 unified:117 collapsedBefore:3",
+          "a52@2550 d52@2550 split:52 unified:64 collapsedBefore:550",
+          "a12@2603 d12@2603 split:12 unified:14 collapsedBefore:1",
+          "a20@3382 d20@3382 split:20 unified:24 collapsedBefore:767",
+          "a32@3404 d32@3404 split:32 unified:39 collapsedBefore:2",
+          "a7@3442 d7@3442 split:7 unified:8 collapsedBefore:6",
+          "a8@3452 d8@3452 split:8 unified:10 collapsedBefore:3",
+          "a43@3462 d43@3462 split:43 unified:56 collapsedBefore:2",
+          "a12@3506 d12@3506 split:12 unified:16 collapsedBefore:1",
+          "a34@3519 d34@3519 split:34 unified:43 collapsedBefore:1",
+          "a12@3554 d12@3554 split:12 unified:14 collapsedBefore:1",
+        ],
+        "name": "apps/demo/src/mocks/diff3.patch",
+        "prevName": undefined,
+        "totals": "split:3565 unified:3715 additionLines:622 deletionLines:622",
+        "type": "change",
+      },
+      {
+        "hunks": [
+          "a52@492 d52@492 split:52 unified:64 collapsedBefore:491",
+          "a12@545 d12@545 split:12 unified:14 collapsedBefore:1",
+          "a20@1324 d20@1324 split:20 unified:24 collapsedBefore:767",
+          "a32@1346 d32@1346 split:32 unified:39 collapsedBefore:2",
+          "a7@1384 d7@1384 split:7 unified:8 collapsedBefore:6",
+          "a8@1394 d8@1394 split:8 unified:10 collapsedBefore:3",
+          "a43@1404 d43@1404 split:43 unified:56 collapsedBefore:2",
+          "a12@1448 d12@1448 split:12 unified:16 collapsedBefore:1",
+          "a34@1461 d34@1461 split:34 unified:43 collapsedBefore:1",
+          "a12@1496 d12@1496 split:12 unified:14 collapsedBefore:1",
+          "a20@1963 d20@1963 split:20 unified:24 collapsedBefore:455",
+          "a39@1985 d39@1985 split:39 unified:47 collapsedBefore:2",
+          "a7@2029 d7@2029 split:7 unified:8 collapsedBefore:5",
+          "a92@2039 d92@2039 split:92 unified:117 collapsedBefore:3",
+          "a52@2681 d52@2681 split:52 unified:64 collapsedBefore:550",
+          "a12@2734 d12@2734 split:12 unified:14 collapsedBefore:1",
+          "a20@3513 d20@3513 split:20 unified:24 collapsedBefore:767",
+          "a32@3535 d32@3535 split:32 unified:39 collapsedBefore:2",
+          "a7@3573 d7@3573 split:7 unified:8 collapsedBefore:6",
+          "a8@3583 d8@3583 split:8 unified:10 collapsedBefore:3",
+          "a43@3593 d43@3593 split:43 unified:56 collapsedBefore:2",
+          "a12@3637 d12@3637 split:12 unified:16 collapsedBefore:1",
+          "a34@3650 d34@3650 split:34 unified:43 collapsedBefore:1",
+          "a12@3685 d12@3685 split:12 unified:14 collapsedBefore:1",
+          "a62@4092 d62@4092 split:62 unified:90 collapsedBefore:395",
+          "a8@4155 d8@4155 split:8 unified:10 collapsedBefore:1",
+          "a19@4165 d19@4165 split:19 unified:25 collapsedBefore:2",
+          "a7@4219 d7@4219 split:7 unified:8 collapsedBefore:35",
+          "a7@4232 d7@4232 split:7 unified:8 collapsedBefore:6",
+        ],
+        "name": "apps/demo/src/mocks/diff4.patch",
+        "prevName": undefined,
+        "totals": "split:4238 unified:4426 additionLines:725 deletionLines:725",
+        "type": "change",
+      },
+    ],
+    "patchIndex": 8,
+  },
+]
+`;
+
+exports[`parsePatchFiles patches with a final blank line should have a \\n added: final blank line patch 1`] = `
+[
+  {
+    "files": [
+      {
+        "additionLines": [
+          
+"	const is_single_element = trimmed.length === 1 && trimmed[0].type === 'RegularElement';
+"
+,
+          
+"	const is_single_child_not_needing_template =
+"
+,
+          
+"		trimmed.length === 1 &&
+"
+,
+          
+"		(trimmed[0].type === 'SvelteFragment' || trimmed[0].type === 'TitleElement');
+"
+,
+          
+"
+"
+,
+          
+"	const template_name = context.state.scope.root.unique('root'); // TODO infer name from parent
+"
+,
+          
+"
+"
+,
+        ],
+        "cacheKey": undefined,
+        "deletionLines": [
+          
+"	const is_single_element = trimmed.length === 1 && trimmed[0].type === 'RegularElement';
+"
+,
+          
+"	const is_single_child_not_needing_template =
+"
+,
+          
+"		trimmed.length === 1 &&
+"
+,
+          
+"		(trimmed[0].type === 'SvelteFragment' ||
+"
+,
+          
+"			trimmed[0].type === 'TitleElement' ||
+"
+,
+          
+"			(trimmed[0].type === 'IfBlock' && trimmed[0].elseif));
+"
+,
+          
+"
+"
+,
+          
+"	const template_name = context.state.scope.root.unique('root'); // TODO infer name from parent
+"
+,
+          
+"
+"
+,
+        ],
+        "hunks": [
+          {
+            "additionCount": 7,
+            "additionLineIndex": 0,
+            "additionLines": 1,
+            "additionStart": 47,
+            "collapsedBefore": 46,
+            "deletionCount": 9,
+            "deletionLineIndex": 0,
+            "deletionLines": 3,
+            "deletionStart": 47,
+            "hunkContent": [
+              {
+                "additionLineIndex": 0,
+                "deletionLineIndex": 0,
+                "lines": 3,
+                "type": "context",
+              },
+              {
+                "additionLineIndex": 3,
+                "additions": 1,
+                "deletionLineIndex": 3,
+                "deletions": 3,
+                "type": "change",
+              },
+              {
+                "additionLineIndex": 4,
+                "deletionLineIndex": 6,
+                "lines": 3,
+                "type": "context",
+              },
+            ],
+            "hunkContext": "export function Fragment(node, context) {",
+            "hunkSpecs": 
+"@@ -47,9 +47,7 @@ export function Fragment(node, context) {
+"
+,
+            "noEOFCRAdditions": false,
+            "noEOFCRDeletions": false,
+            "splitLineCount": 9,
+            "splitLineStart": 46,
+            "unifiedLineCount": 10,
+            "unifiedLineStart": 46,
+          },
+        ],
+        "isPartial": true,
+        "name": "packages/svelte/src/compiler/phases/3-transform/client/visitors/Fragment.js",
+        "prevName": undefined,
+        "splitLineCount": 55,
+        "type": "change",
+        "unifiedLineCount": 56,
+      },
+    ],
+    "patchMetadata": undefined,
+  },
+]
+`;
+
+exports[`parsePatchFiles should warn on malformed patch with bare newline in hunk: malformed patch 1`] = `
+[
+  {
+    "files": [
+      {
+        "additionLines": [],
+        "cacheKey": undefined,
+        "deletionLines": [
+          
+"import type { PreloadedFileResult } from '@pierre/diffs/ssr';
+"
+,
+          
+"
+"
+,
+          
+"import { DocsCodeExample } from '../DocsCodeExample';
+"
+,
+          
+"import { ProseWrapper } from '../ProseWrapper';
+"
+,
+          
+"
+"
+,
+          
+"interface CoreTypesProps {
+"
+,
+          
+"  fileContentsType: PreloadedFileResult<undefined>;
+"
+,
+          
+"  fileDiffMetadataType: PreloadedFileResult<undefined>;
+"
+,
+          
+"  parseDiffFromFileExample: PreloadedFileResult<undefined>;
+"
+,
+          
+"  parsePatchFilesExample: PreloadedFileResult<undefined>;
+"
+,
+          
+"}
+"
+,
+          
+"
+"
+,
+          
+"export function CoreTypes({
+"
+,
+          
+"  fileContentsType,
+"
+,
+          
+"  fileDiffMetadataType,
+"
+,
+          
+"  parseDiffFromFileExample,
+"
+,
+          
+"  parsePatchFilesExample,
+"
+,
+          
+"}: CoreTypesProps) {
+"
+,
+          
+"  return (
+"
+,
+          
+"    <ProseWrapper>
+"
+,
+          
+"      <h2>Core Types</h2>
+"
+,
+          
+"      <p>
+"
+,
+          
+"        Before diving into the components, it‘s helpful to understand the two
+"
+,
+          
+"        core data structures used throughout the library.
+"
+,
+          
+"      </p>
+"
+,
+          
+"
+"
+,
+          
+"      <h3>FileContents</h3>
+"
+,
+          
+"      <p>
+"
+,
+          
+"        <code>FileContents</code> represents a single file. Use it when
+"
+,
+          
+"        rendering a file with the <code>&lt;File&gt;</code> component, or pass
+"
+,
+          
+"        two of them as <code>oldFile</code> and <code>newFile</code> to diff
+"
+,
+          
+"        components.
+"
+,
+          
+"      </p>
+"
+,
+          
+"      <DocsCodeExample {...fileContentsType} />
+"
+,
+          
+"
+"
+,
+          
+"      <h3>FileDiffMetadata</h3>
+"
+,
+          
+"      <p>
+"
+,
+          
+"        <code>FileDiffMetadata</code> represents the differences between two
+"
+,
+          
+"        files. It contains the hunks (changed regions), line counts, and
+"
+,
+          
+"        optionally the full file contents for expansion.
+"
+,
+          
+"      </p>
+"
+,
+          
+"      <p className="text-muted-foreground">
+"
+,
+          
+"        <strong>Tip:</strong> You can generate <code>FileDiffMetadata</code>{' '}
+"
+,
+          
+"        using{' '}
+"
+,
+          
+"        <a href="#utilities-parsedifffromfile">
+"
+,
+          
+"          <code>parseDiffFromFile</code>
+"
+,
+          
+"        </a>{' '}
+"
+,
+          
+"        (from two file versions) or{' '}
+"
+,
+          
+"        <a href="#utilities-parsepatchfiles">
+"
+,
+          
+"          <code>parsePatchFiles</code>
+"
+,
+          
+"        </a>{' '}
+"
+,
+          
+"        (from a patch string).
+"
+,
+          
+"      </p>
+"
+,
+          
+"      <DocsCodeExample {...fileDiffMetadataType} />
+"
+,
+          
+"
+"
+,
+          
+"      <h3>Creating Diffs</h3>
+"
+,
+          
+"      <p>
+"
+,
+          
+"        There are two ways to create a <code>FileDiffMetadata</code>.
+"
+,
+          
+"      </p>
+"
+,
+          
+"
+"
+,
+          
+"      <h4 data-toc-ignore>From Two Files</h4>
+"
+,
+          
+"      <p>
+"
+,
+          
+"        Use <code>parseDiffFromFile</code> when you have both file versions.
+"
+,
+          
+"        This approach includes the full file contents, enabling the “expand
+"
+,
+          
+"        unchanged” feature.
+"
+,
+          
+"      </p>
+"
+,
+          
+"      <DocsCodeExample {...parseDiffFromFileExample} />
+"
+,
+          
+"
+"
+,
+          
+"      <h4 data-toc-ignore>From a Patch String</h4>
+"
+,
+          
+"      <p>
+"
+,
+          
+"        Use <code>parsePatchFiles</code> when you have a unified diff or patch
+"
+,
+          
+"        file. This is useful when working with git output or patch files from
+"
+,
+          
+"        APIs.
+"
+,
+          
+"      </p>
+"
+,
+          
+"      <DocsCodeExample {...parsePatchFilesExample} />
+"
+,
+          
+"      <p className="text-muted-foreground text-sm">
+"
+,
+          
+"        <strong>Tip:</strong> If you need to change the language after creating
+"
+,
+          
+"        a <code>FileContents</code> or <code>FileDiffMetadata</code>, use the{' '}
+"
+,
+          
+"        <a href="#utilities-setlanguageoverride">
+"
+,
+          
+"          <code>setLanguageOverride</code>
+"
+,
+          
+"        </a>{' '}
+"
+,
+          
+"        utility function.
+"
+,
+          
+"      </p>
+"
+,
+          
+"    </ProseWrapper>
+"
+,
+          
+"  );
+"
+,
+          "}",
+        ],
+        "hunks": [
+          {
+            "additionCount": 0,
+            "additionLineIndex": 0,
+            "additionLines": 0,
+            "additionStart": 0,
+            "collapsedBefore": 0,
+            "deletionCount": 86,
+            "deletionLineIndex": 0,
+            "deletionLines": 86,
+            "deletionStart": 1,
+            "hunkContent": [
+              {
+                "additionLineIndex": 0,
+                "additions": 0,
+                "deletionLineIndex": 0,
+                "deletions": 86,
+                "type": "change",
+              },
+            ],
+            "hunkContext": undefined,
+            "hunkSpecs": 
+"@@ -1,87 +0,0 @@
+"
+,
+            "noEOFCRAdditions": false,
+            "noEOFCRDeletions": false,
+            "splitLineCount": 86,
+            "splitLineStart": 0,
+            "unifiedLineCount": 86,
+            "unifiedLineStart": 0,
+          },
+        ],
+        "isPartial": true,
+        "mode": "100644",
+        "name": "apps/docs/app/docs/CoreTypes/CoreTypes.tsx",
+        "newObjectId": "000000000",
+        "prevName": undefined,
+        "prevObjectId": "c4a19b419",
+        "splitLineCount": 86,
+        "type": "deleted",
+        "unifiedLineCount": 86,
+      },
+    ],
+    "patchMetadata": undefined,
+  },
+]
+`;

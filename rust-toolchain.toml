@@ -1,0 +1,4 @@
+[toolchain]
+# must match zed's rust-toolchain.toml for the pinned gpui revision
+channel = "1.97.1"
+profile = "minimal"

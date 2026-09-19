@@ -1,0 +1,25 @@
+{
+  "commit": "c5b1e58203fa5c59dd99353cbcac09ee653a24f6",
+  "files": {
+    "playground.ts": {
+      "source": "apps/docs/app/(diffs)/playground/constants.ts",
+      "sha256": "1dd58ea682b214c9809fd62d393c9c983ee121a5bddfc6b2e6966a9184b24f99"
+    },
+    "searchParams.ts": {
+      "source": "apps/docs/app/(diffs)/playground/searchParams.ts",
+      "sha256": "01fe4cb03efef3fe300418d52ff52d5b842d87823d9a996776c0aaaf91f56349"
+    },
+    "edit.ts": {
+      "source": "apps/docs/app/(diffs)/_edit/constants.ts",
+      "sha256": "1a190f2cc50e4b7476155f7b00b3c15d2343f6b0137cf2a1c7a9f52a96a48dd6"
+    },
+    "LICENSE.md": {
+      "source": "LICENSE.md",
+      "sha256": "13d92be18d5ceac526f33cc96b6902a14d168f3e1d4b16be738f0fa70da7fe98"
+    }
+  },
+  "generated": {
+    "path": "src/experiments/diffs/playground/fixtures.json",
+    "sha256": "ab799909cd9d8ead9c398942116801e2236391346e6247f884282bb514946a7d"
+  }
+}

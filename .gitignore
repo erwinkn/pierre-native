@@ -1,0 +1,14 @@
+node_modules/
+.cache/
+dist/
+.DS_Store
+*.tgz
+.env*
+docs/evidence/
+.*.bun-build
+target/
+.wrangler/
+
+.dev.vars*
+!.dev.vars.example
+!.env.example

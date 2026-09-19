@@ -1,0 +1,26 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`parseDiffFromFile should parse diff from fileOld and fileNew and match its digest: parsed diff digest 1`] = `
+{
+  "hunks": [
+    "a9@4 d8@4 split:9 unified:9 collapsedBefore:3",
+    "a15@19 d8@18 split:15 unified:15 collapsedBefore:6",
+    "a8@48 d10@40 split:10 unified:10 collapsedBefore:14",
+    "a13@106 d19@100 split:19 unified:22 collapsedBefore:50",
+    "a17@120 d18@120 split:18 unified:21 collapsedBefore:1",
+    "a8@148 d9@149 split:9 unified:9 collapsedBefore:11",
+    "a13@157 d28@159 split:28 unified:28 collapsedBefore:1",
+    "a125@214 d35@231 split:130 unified:130 collapsedBefore:44",
+    "a27@349 d26@276 split:27 unified:31 collapsedBefore:10",
+    "a18@383 d17@309 split:18 unified:20 collapsedBefore:7",
+    "a18@402 d17@327 split:18 unified:20 collapsedBefore:1",
+    "a94@425 d53@349 split:123 unified:136 collapsedBefore:5",
+    "a27@550 d8@433 split:27 unified:27 collapsedBefore:31",
+    "a36@633 d8@497 split:36 unified:36 collapsedBefore:56",
+  ],
+  "name": "fileNew.txt",
+  "prevName": "fileOld.txt",
+  "totals": "split:770 unified:797 additionLines:711 deletionLines:547",
+  "type": "rename-changed",
+}
+`;

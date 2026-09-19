@@ -1,0 +1,28 @@
+[package]
+name = "pierre-native-view"
+version = "0.1.0"
+edition = "2021"
+license = "Apache-2.0"
+description = "Native Pierre diff and editor viewport for GPUIX"
+
+[dependencies]
+gpui.workspace = true
+gpuix-native = { workspace = true, optional = true }
+gpui-react = { workspace = true, optional = true }
+gpui-react-controls = { workspace = true, optional = true }
+csscolorparser = "0.8.3"
+anyhow = "1"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+unicode-segmentation = "1"
+unicode-linebreak = "0.1"
+
+[features]
+default = []
+legacy = ["dep:gpuix-native"]
+react = ["dep:gpui-react", "dep:gpui-react-controls"]
+
+[dev-dependencies]
+gpui = { workspace = true, features = ["test-support"] }
+
+gpui_macos = { workspace = true, features = ["test-support"] }

@@ -1,0 +1,143 @@
+name: Build and verify playground
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pierre-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  verify:
+    runs-on: macos-26
+    timeout-minutes: 90
+    env:
+      CARGO_BUILD_JOBS: 3
+      CARGO_TARGET_DIR: ${{ github.workspace }}/.cache/cargo
+      GPUIX_BACKGROUND: 1
+      GPUI_FONT_SMOOTHING: 0
+    steps:
+      - uses: actions/checkout@v4
+      - uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: 1.4.2
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - uses: actions-rust-lang/setup-rust-toolchain@v1
+        with:
+          cache: false
+          rustflags: ""
+      - uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cargo/registry
+            ~/.cargo/git
+            .cache/cargo
+          key: pierre-${{ runner.os }}-${{ runner.arch }}-${{ hashFiles('Cargo.lock', 'rust-toolchain.toml', '.cargo/config.toml') }}
+      - name: Install browser and Metal toolchains
+        run: |
+          test "$(uname -m)" = arm64
+          xcodebuild -downloadComponent MetalToolchain
+          rustup toolchain install nightly-2026-09-16 --profile minimal --component rust-src --target wasm32-unknown-unknown
+          cargo install wasm-bindgen-cli --version 0.2.127 --locked
+          npm install --global agent-browser@0.31.1
+          agent-browser install
+      - run: bun install --frozen-lockfile
+      - name: Verify source and algorithms
+        run: |
+          bun run test:source
+          bun test tests vendor/pierre/test
+      - name: Build both runtimes
+        run: |
+          bun run build:native
+          bun run build:wasm
+          bun run typecheck
+      - name: Verify native editor and packaged application
+        run: |
+          bun run test:native
+          bun run test:application
+          bun run test:package
+      - name: Verify WebGPU and WebGL
+        run: |
+          bun run build:web
+          bun run web > "$RUNNER_TEMP/pierre-web.log" 2>&1 &
+          server_pid=$!
+          trap 'kill "$server_pid"' EXIT
+          for _ in {1..30}; do
+            if curl --fail --silent http://127.0.0.1:4175/ > /dev/null; then break; fi
+            sleep 1
+          done
+          bun run test:browser
+          bun run test:webgl
+      - name: Archive the app
+        run: ditto -c -k --sequesterRsrc --keepParent "dist/Pierre Native.app" dist/pierre-native-macos-arm64.zip
+      - uses: actions/upload-artifact@v4
+        with:
+          name: pierre-site
+          path: dist/site/
+          include-hidden-files: true
+          if-no-files-found: error
+      - uses: actions/upload-artifact@v4
+        with:
+          name: pierre-packages
+          path: |
+            dist/package/pierre-native.tgz
+            dist/pierre-native-macos-arm64.zip
+          if-no-files-found: error
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: pierre-test-evidence
+          path: docs/evidence/
+
+  website:
+    if: github.ref == 'refs/heads/main' && github.repository == 'erwinkn/pierre-native'
+    needs: verify
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: pierre-site
+          path: site
+      - name: Publish the generated Cloudflare Pages branch
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SOURCE_SHA: ${{ github.sha }}
+          SOURCE_REPOSITORY: ${{ github.repository }}
+        run: |
+          gh auth setup-git
+          git -C site init -b pages
+          git -C site config user.name 'github-actions[bot]'
+          git -C site config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git -C site add .
+          git -C site commit -m "Build playground from $SOURCE_SHA"
+          git -C site remote add origin "https://github.com/$SOURCE_REPOSITORY.git"
+          git -C site push --force origin HEAD:pages
+
+  cloudflare:
+    if: github.ref == 'refs/heads/main' && vars.CLOUDFLARE_DEPLOY_ENABLED == 'true'
+    needs: verify
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: 1.4.2
+      - uses: actions/download-artifact@v4
+        with:
+          name: pierre-site
+          path: dist/site
+      - name: Deploy verified assets through the Cloudflare API
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ vars.CLOUDFLARE_ACCOUNT_ID }}
+        run: bunx wrangler@4.135.0 deploy --config wrangler.jsonc

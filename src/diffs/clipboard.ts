@@ -1,0 +1,1 @@
+export { systemClipboard } from "../platform";
